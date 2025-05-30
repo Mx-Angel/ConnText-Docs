@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{ConnText Software Requirement Specification (SRS)}
+\author{MxAngel \\ \small Document Version 0.1}
+\date{}
+
+\begin{document}
+\maketitle
+{
+  \hypersetup{linkcolor=black}
+  \tableofcontents
+}
+
+
+\section{Introduction}
+This document outlines the software requirements for ConnText. This is a tool designed to facilitate the secure communication of information between users. The tool is intended for both individuals and organizations, providing a self-hosted platform for sharing sensitive data while ensuring privacy and security.
+
+\section{Vision and Scope}
+\subsection{Project Objectives}
+\begin{itemize}
+    \item Allow users to securely share text, files and image based information.
+    \item Provide a self-hosted solution for data privacy.
+    \item Provide a secure audio and video communication platform.
+    \item Foster an active and welcoming open-source community around ConnText for collaborative development and continuous improvement.
+    \item Ensure data is stored and transmitted securely.
+\end{itemize}
+
+
+\subsection{Stakeholders}
+\subsubsection{Primary Stakeholders}
+The primary stakeholders in ConnText are the end-users who will utilize the platform for secure communication. This could include journalists, doctors, lawyers, and other professionals who may need to communicate sensitive information securely.
+
+\subsubsection{Secondary Stakeholders}
+The secondary stakeholders include:
+\begin{itemize}
+    \item Developers and contributors who will actively participate in the development and maintenance of the ConnText platform. They will contribute code, documentation, and other resources to enhance the platform's functionality and security.
+    \item System administrators and IT personnel who will manage the deployment and maintenance of the ConnText platform. They will ensure that the system is secure, up-to-date, and functioning correctly.
+    \item Legal and compliance teams who will ensure that the platform adheres to relevant data protection regulations.
+    \item Security experts who may be involved to assess and enhance the platform's security features.
+\end{itemize}
+
+\subsubsection{Tertiary Stakeholders}
+The tertiary stakeholders include:
+\begin{itemize}
+    \item Government bodies and regulatory agencies that may have an interest in the platform's compliance with data protection laws.
+    \item Open-source communities/foundations that may support the project through funding, resources, standards or advocacy.
+    \item Any competitors or similar platforms that may influence the market landscape.
+\end{itemize} 
+
+
+\subsection{Assumptions and Dependencies}
+\subsubsection{Assumptions}
+\begin{itemize}
+    \item Users have access to the internet and basic computer literacy for use of the front-end.
+    \item Users who choose to self-host ConnText are assumed to possess a moderate level of technical proficiency, including familiarity with server management, network configuration, and routine software updates. The project assumes users will provide and manage their own suitable computing infrastructure meeting the minimum specified hardware and software requirements.
+    \item The underlying operating systems (Linux, macOS, and Windows) will provide consistent and compatible environments for ConnText's core functionalities and dependencies, ensuring a seamless cross-platform experience.
+    \item Current data protection laws and regulations relevant to secure communication will not undergo significant, disruptive changes within the project timeline.
+\end{itemize}
+
+\subsubsection{Dependencies}
+\begin{itemize}
+    \item The project will depend on the continued availability, stability, and security patching of various open-source libraries and frameworks for development.
+    \item A sufficient level of community interest and contribution will materialize to support the long-term sustainability, bug fixing, and feature development of ConnText, aligning with its open-source nature.
+\end{itemize}
+
+\subsection{Vision Statement}
+Those who work with sensitive information or just want their data to be private and secure, will be able to use ConnText to communicate securely with others. ConnText will provide a self-hosted solution that allows users to share text, files, and images securely, while also offering audio and video communication capabilities. This will reduce the dependency on third-party services, ensuring that users have full control over their data and making them less vulnerable to data breaches and privacy violations. Most current solutions are either not secure enough, sell user data to subsidise the free service or require payment. ConnText will attempt to solve these issues by providing a secure, self-hosted solution that is free to use and open-source.
+
+\subsection{Feature Tree}
+
+\subsection{Content Diagrams}
+
+\end{document}
