@@ -20,12 +20,12 @@ This document outlines user stories for the ConnText software, a platform design
 - As a user, I want to recover my password so that I can regain access to my account if I forget it.
 - As a user, I want to share my video feed in voice channels so that users can have face-to-face communication.
 - As a user, I want to share my screen during voice/video chats so that I can present information or collaborate visually.
-
-### Server specific stories
-- As a user, I want to create a server so that I can host my own communication space.
 - As a user, I want to have server-specific usernames so that I can differentiate my identity on different servers.
 - As a user, I want to join multiple servers so that I can participate in different communities.
 - As a user, I want to leave servers so that I can manage my participation in different communities.
+
+### Server specific stories
+- As a user, I want to create a server so that I can host my own communication space.
 - As a server admin, I want to create or edit my server image so that I can personalize my server.
 - As a server admin, I want to create or edit my server name so that I can identify my server clearly.
 - As a server admin, I want to create or edit my server description so that I can provide more information about my server.

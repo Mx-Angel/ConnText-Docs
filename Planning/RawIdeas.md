@@ -20,12 +20,12 @@ This document is a collection of raw ideas for features and functionalities that
 - Support password recovery
 - Add support for video chats in voice chat channels
 - Add support for screen sharing in voice/video chats
-
-### Server specific features
-- Be able to create servers
 - Support server specific usernames
 - Be able to join multiple servers
 - Be able to leave servers
+
+### Server specific features
+- Be able to create servers
 - Be able to create/edit server image
 - Be able to create/edit server name
 - Be able to create/edit server description
