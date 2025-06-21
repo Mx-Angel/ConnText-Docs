@@ -1,7 +1,7 @@
-# Ideas for ConnText software (v1.1)
+# Ideas for ConnText software (v1.2)
 
 ## Overview
-**ConnText**: A software platform designed to facilitate and enhance communication, collaboration, and connection among individuals and groups with a focus on privacy, security, and user empowerment.
+This document is a collection of raw ideas for features and functionalities that could be included in the ConnText software. These ideas are intended to be refined and prioritized based on user needs and technical feasibility.
 
 ## Feature Dump
 - Support creating user accounts
