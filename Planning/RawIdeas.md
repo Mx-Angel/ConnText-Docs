@@ -1,4 +1,4 @@
-# Ideas for ConnText software (v1.0)
+# Ideas for ConnText software (v1.1)
 
 ## Overview
 **ConnText**: A software platform designed to facilitate and enhance communication, collaboration, and connection among individuals and groups with a focus on privacy, security, and user empowerment.
@@ -15,6 +15,17 @@
 - Support server specific usernames
 - Add private message support
 - Be able to join multiple servers
+- Be able to leave servers
+- Be able to create/edit server image
+- Be able to create/edit server name
+- Be able to create/edit server description
+- Support message reactions
+- Support user presence/status indicators
+- Support user blocking
+- Support user muting
+- Support notifications for notable events
+- Support password recovery
+- Allow for users to export their data
 - Add server role feature
 - Add server access level control
 - Add creating chats to send text messages
@@ -23,8 +34,6 @@
 - Add support for screen sharing in voice/video chats
 - Provide a way to host your own server for handling server traffic for communication
 - Provide a simple GUI for managing the backend server
-- Store all data on the server, but kept encrypted
-- Make sure all communication is end-to-end encrypted
 - Provide a way to search through messages
 - Add server moderation function such as adding, removing, timing out, kicking and banning users
 - Add the ability to pin, reply, delete and edit messages
