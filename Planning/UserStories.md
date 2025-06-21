@@ -4,6 +4,8 @@
 This document outlines user stories for the ConnText software, a platform designed to enhance communication and collaboration while prioritizing privacy and security. Each user story captures a specific need or goal from the perspective of different users. This document uses [RawIdeas.md](RawIdeas.md) as a reference for features and functionalities.
 
 ## User Stories
+
+### User specific stories
 - As a user, I want to create an account so that I can access the ConnText platform and its features.
 - As a user, I want to delete my account so that I can remove my data from the ConnText platform.
 - As a user, I want to enable two-factor authentication so that I can enhance the security of my account.
@@ -19,7 +21,7 @@ This document outlines user stories for the ConnText software, a platform design
 - As a user, I want to share my video feed in voice channels so that users can have face-to-face communication.
 - As a user, I want to share my screen during voice/video chats so that I can present information or collaborate visually.
 
-
+### Server specific stories
 - As a user, I want to create a server so that I can host my own communication space.
 - As a user, I want to have server-specific usernames so that I can differentiate my identity on different servers.
 - As a user, I want to join multiple servers so that I can participate in different communities.
@@ -36,7 +38,7 @@ This document outlines user stories for the ConnText software, a platform design
 - As a server admin, I want to moderate my server by adding, removing, timing out, kicking, and banning users so that I can maintain a healthy community.
 - As a server admin, I want to pin, reply to, delete, and edit messages so that I can moderate conversations effectively.
 
-
+### Miscellaneous stories
 - As a user, I want to send private messages to other users so that I can communicate privately.
 - As a user, I want to react to messages so that I can express my feelings or opinions about them.
 - As a user, I want to receive notifications for notable events so that I can stay informed about important activities.

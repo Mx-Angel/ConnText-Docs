@@ -4,6 +4,8 @@
 This document is a collection of raw ideas for features and functionalities that could be included in the ConnText software. These ideas are intended to be refined and prioritized based on user needs and technical feasibility.
 
 ## Feature Dump
+
+### User specific features
 - Support creating user accounts
 - Support deleting user accounts
 - 2 factor authentication support
@@ -19,7 +21,7 @@ This document is a collection of raw ideas for features and functionalities that
 - Add support for video chats in voice chat channels
 - Add support for screen sharing in voice/video chats
 
-
+### Server specific features
 - Be able to create servers
 - Support server specific usernames
 - Be able to join multiple servers
@@ -36,7 +38,7 @@ This document is a collection of raw ideas for features and functionalities that
 - Add server moderation function such as adding, removing, timing out, kicking and banning users
 - Add the ability to pin, reply, delete and edit messages
 
-
+### Miscellaneous features
 - Add private message support
 - Support message reactions
 - Support notifications for notable events
