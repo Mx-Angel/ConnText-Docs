@@ -1,4 +1,4 @@
-# Angel's Agile Software Development Methodology (V0.2)
+# Angel's Agile Software Development Methodology
 
 ## Core processes:
 - Plan
