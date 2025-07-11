@@ -1,9 +1,9 @@
-# Non-Functional Requirements (NFR) Register
+# Non-Functional Requirements Register
 
 ## Overview
 This document will outline the non-functional requirements of the ConnText software. The non-functional requirements go over requirements that aren't directly related to the functionality of the software, but rather how the software should perform or behave under certain conditions. This document will use [UserStories](UserStories) as a reference for features and functionalities. Additionally, these functional requirements will be split by there types to make it easier to find the requirements you are looking for and to make future modifications easier.
 
-## Non-Functional Requirements
+## Non-Functional Requirements (NFRs)
 
 ### Security
 - All data in transit must be encrypted using industry-standard end-to-end encryption protocols (e.g., TLS 1.3 or higher).
