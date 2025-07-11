@@ -1,7 +1,7 @@
 # User Stories for ConnText software
 
 ## Overview
-This document outlines user stories for the ConnText software, a platform designed to enhance communication and collaboration while prioritizing privacy and security. Each user story captures a specific need or goal from the perspective of different users. This document uses [RawIdeas.md](RawIdeas.md) as a reference for features and functionalities.
+This document outlines user stories for the ConnText software, a platform designed to enhance communication and collaboration while prioritizing privacy and security. Each user story captures a specific need or goal from the perspective of different users. This document uses [RawIdeas.md](RawIdeas) as a reference for features and functionalities.
 
 ## User Stories
 
@@ -23,6 +23,9 @@ This document outlines user stories for the ConnText software, a platform design
 - As a user, I want to have server-specific usernames so that I can differentiate my identity on different servers.
 - As a user, I want to join multiple servers so that I can participate in different communities.
 - As a user, I want to leave servers so that I can manage my participation in different communities.
+- As a user, I want to have the ability to delete all my data from a server when I leave it so that I can ensure my privacy and data security.
+- As a user, I want to be able to download my data from the ConnText platform so that I can keep a backup or transfer it to another platform.
+- As a user, I want to be able to access the ConnText platform from multiple devices so that I can stay connected regardless of the device I use.
 
 ### Server specific stories
 - As a user, I want to create a server so that I can host my own communication space.
@@ -35,6 +38,8 @@ This document outlines user stories for the ConnText software, a platform design
 - As a server admin, I want to create voice chat channels so that I can enable audio communication among users.
 - As a server admin, I want a simple way to host my own server so that I can manage my own communication space and data.
 - As a server admin, I want a simple GUI for managing the backend server so that I can easily configure and maintain my server.
+- As a server admin, I want an overview dashboard for my server so that I can see important information such as throughput, server activity, and other relevant details.
+- As a server admin, I want to manage server plugins and themes so that I can customize the functionality and appearance of my server.
 - As a server admin, I want to moderate my server by adding, removing, timing out, kicking, and banning users so that I can maintain a healthy community.
 - As a server admin, I want to pin, reply to, delete, and edit messages so that I can moderate conversations effectively.
 
