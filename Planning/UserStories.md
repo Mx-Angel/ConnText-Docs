@@ -24,31 +24,36 @@ This document outlines user stories for the ConnText software, a platform design
 - As a user, I want to join multiple servers so that I can participate in different communities.
 - As a user, I want to leave servers so that I can manage my participation in different communities.
 - As a user, I want to have the ability to delete all my data from a server when I leave it so that I can ensure my privacy and data security.
-- As a user, I want to be able to download my data from the ConnText platform so that I can keep a backup or transfer it to another platform.
+- As a user, I want to be able to download/export my data from the ConnText platform so that I can keep a backup or transfer it to another platform.
 - As a user, I want to be able to access the ConnText platform from multiple devices so that I can stay connected regardless of the device I use.
+- As a user, I want to be able to choose where my profile data is stored so that I can have control over my personal information.
+- As a user, I want to send private messages to other users so that I can communicate privately.
+- As a user, I want to react to messages so that I can express my feelings or opinions about them.
+- As a user, I want to receive notifications for notable events so that I can stay informed about important activities.
+- As a user, I want to search through messages so that I can find specific information or conversations quickly.
+- As a user, I want theming support so that I can customize the appearance of the platform to my liking.
+- As a user, I want to use custom plugins for my instance of ConnText so that I can extend the functionality of the ConnText platform according to my needs.
 
 ### Server specific stories
 - As a user, I want to create a server so that I can host my own communication space.
+- As a user, I want to have a server library for storing files and searching through them so that I can manage my documents and media easily.
+
+### Server Admin stories (Community Management)
 - As a server admin, I want to create or edit my server image so that I can personalize my server.
 - As a server admin, I want to create or edit my server name so that I can identify my server clearly.
 - As a server admin, I want to create or edit my server description so that I can provide more information about my server.
 - As a server admin, I want to have server roles so that I can manage permissions and responsibilities within my server.
 - As a server admin, I want to control server access levels so that I can restrict or allow user actions based on their roles.
-- As a server admin, I want to create text chat channel so that I can facilitate text-based communication among users.
+- As a server admin, I want to create text chat channels so that I can facilitate text-based communication among users.
 - As a server admin, I want to create voice chat channels so that I can enable audio communication among users.
-- As a server admin, I want a simple way to host my own server so that I can manage my own communication space and data.
-- As a server admin, I want a simple GUI for managing the backend server so that I can easily configure and maintain my server.
-- As a server admin, I want an overview dashboard for my server so that I can see important information such as throughput, server activity, and other relevant details.
-- As a server admin, I want to manage server plugins and themes so that I can customize the functionality and appearance of my server.
 - As a server admin, I want to moderate my server by adding, removing, timing out, kicking, and banning users so that I can maintain a healthy community.
 - As a server admin, I want to pin, reply to, delete, and edit messages so that I can moderate conversations effectively.
+- As a server admin, I want to manage server plugins and themes so that I can customize the functionality and appearance of my server.
 
-### Miscellaneous stories
-- As a user, I want to send private messages to other users so that I can communicate privately.
-- As a user, I want to react to messages so that I can express my feelings or opinions about them.
-- As a user, I want to receive notifications for notable events so that I can stay informed about important activities.
-- As a user, I want to export my data so that I can keep a backup or transfer it to another platform.
-- As a user, I want to search through messages so that I can find specific information or conversations quickly.
-- As a user, I want to have a server library for storing files and searching through them so that I can manage my documents and media easily.
-- As a user, I want theming support so that I can customize the appearance of the platform to my liking.
-- As a user, I want to use custom plugins so that I can extend the functionality of the ConnText platform according to my needs.
+### System Admin stories (Technical Operations)
+- As a system admin, I want a simple way to host my own ConnText instance so that I can deploy and manage the software infrastructure.
+- As a system admin, I want a simple GUI for managing the backend system so that I can easily configure and maintain the server software.
+- As a system admin, I want an overview dashboard for system health so that I can monitor server performance, resource usage, and technical metrics.
+- As a system admin, I want to manage software updates and rollbacks so that I can keep the system secure and stable.
+- As a system admin, I want to configure backup and restore procedures so that I can protect against data loss.
+- As a system admin, I want to manage system-level security settings so that I can protect the entire ConnText installation.
