@@ -1,7 +1,7 @@
 # Non-Functional Requirements Register
 
 ## Overview
-This document will outline the non-functional requirements of the ConnText software. The non-functional requirements go over requirements that aren't directly related to the functionality of the software, but rather how the software should perform or behave under certain conditions. This document will use [UserStories](UserStories) as a reference for features and functionalities. Additionally, these functional requirements will be split by there types to make it easier to find the requirements you are looking for and to make future modifications easier.
+This document will outline the non-functional requirements of the ConnText software. The non-functional requirements go over requirements that aren't directly related to the functionality of the software, but rather how the software should perform or execute certain functionality. This document will use [UserStories](UserStories) as a reference for features and functionalities. Additionally, these non-functional requirements will be split by there types to make it easier to find the requirements you are looking for and to make future modifications easier.
 
 ## Non-Functional Requirements (NFRs)
 
@@ -39,7 +39,8 @@ This document will outline the non-functional requirements of the ConnText softw
 
 ### Maintainability and Manageability
 - The system must offer a clear separation of configuration and runtime data to support safe upgrades and rollbacks.
-- Server-side configuration must be accessible via a GUI or configuration files, supporting both novice and advanced administrators.
+- System-level configuration must be accessible to system admins via a GUI or configuration files, supporting both novice and advanced administrators.
+- Server-level configuration must be accessible to server admins through intuitive management interfaces.
 - The software must support automated version checks and update mechanisms, with optional auto-updates.
 - Admins must be able to roll back to a previous stable version after an update failure, with user data remaining intact.
 - Plugins, themes, and other server customizations must be modular and sandboxed to prevent core application failures.
@@ -53,11 +54,19 @@ This document will outline the non-functional requirements of the ConnText softw
 
 ### Usability
 - All administrative UIs must follow usability heuristics (e.g., visibility of system status, error prevention, clear feedback).
-- Users must be able to perform core actions (e.g., account setup, server creation) in no more than 3 steps.
+- Users must be able to perform core actions (e.g., account setup, joining servers) in no more than 3 steps.
+- Server admins must be able to perform community management actions (e.g., creating channels, managing roles) in no more than 3 steps.
+- System admins must be able to perform technical operations (e.g., backup configuration, system monitoring) through intuitive interfaces.
 - All interfaces must be accessible according to WCAG 2.2 guidelines, including keyboard navigation and screen reader support.
 - The system should support consistent theming and localization, allowing customization of appearance and language.
 - Errors, warnings, and confirmations must be descriptive and non-technical for end users.
 - The platform must provide comprehensive documentation, including user guides, API references, and troubleshooting tips.
+
+### Storage
+- All stored data must be compressed using the zlib compression algorithm.
+- Frequently accessed data (e.g., recent messages, active user profiles) must use zlib compression with low compression levels (1-3) to prioritize decompression speed.
+- Infrequently accessed data (e.g., archived messages older than 30 days, inactive user data, etc) must use zlib compression with high compression levels (6-9) to maximize storage efficiency.
+- The system must automatically categorize data access patterns and apply appropriate compression levels based on usage frequency.
 
 ### Performance
 - The system must deliver chat message send/receive latency of less than 200ms under typical network conditions.
@@ -65,6 +74,7 @@ This document will outline the non-functional requirements of the ConnText softw
 - The platform should compress and decompress uploaded files efficiently, minimizing both server-side storage usage and client-side delays.
 - Audio and video streaming must maintain under 250ms latency and less than 5% jitter under normal network load.
 - UI interactions (e.g., navigation, message posting, switching views) must respond within 500ms in 95% of typical user operations.
+- All data should be compressed before transmission to reduce bandwidth usage and improve performance.
 
 ### Compliance
 - The ConnText software must comply with major international data protection laws, including GDPR, where applicable.
