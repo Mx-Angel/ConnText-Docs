@@ -24,6 +24,7 @@ This document will outline the non-functional requirements of the ConnText softw
 - **NFR-SEC-08**: The system must support granular permission assignment, allowing both role-based and direct user permissions without compromising security isolation.
 - **NFR-SEC-09**: Logs must not contain sensitive information (e.g., passwords, full tokens) and must be protected from unauthorized access.
 - **NFR-SEC-10**: The software should respect user privacy when executing the backup feature, ensuring that user data is not included in backups unless explicitly opted-in by the user.
+- **NFR-SEC-11**: The system must support configurable authentication method enforcement at the server level, allowing admins to require specific verification methods.
 
 ### Privacy
 - **NFR-PRIV-01**: The software must allow server-level moderation (blocking, banning, etc.) without exposing user activity or private data to unauthorized parties.
@@ -60,6 +61,7 @@ This document will outline the non-functional requirements of the ConnText softw
 - **NFR-REL-05**: No user or server data should be permanently lost without explicit deletion, even after hardware or software failure.
 - **NFR-REL-06**: The system must support graceful degradation, ensuring that when certain features fail or network conditions worsen (e.g., low bandwidth), essential functionality remains accessible. For example, disabling video when audio quality drops, or prioritizing text delivery when media cannot load.
 - **NFR-REL-07**: The system must provide centralized error logging and alerting for service-level failures
+- **NFR-REL-08**: The system must support automated backup scheduling with configurable retention policies to prevent data loss.
 
 ### Maintainability and Manageability
 - **NFR-MAINT-01**: The system must offer a clear separation of configuration and runtime data to support safe upgrades and rollbacks.
@@ -88,6 +90,7 @@ This document will outline the non-functional requirements of the ConnText softw
 - **NFR-USAB-08**: The platform must provide comprehensive documentation, including user guides, API references, and troubleshooting tips.
 - **NFR-USAB-09**: Server admins must be able to assign and modify user permissions (both role-based and direct) in no more than 3 steps.
 - **NFR-USAB-10**: All user interfaces must be fully operable using keyboard-only navigation.
+- **NFR-USAB-11**: System admins must be able to perform system monitoring and maintenance tasks (e.g., viewing logs, managing backups) through intuitive GUI interfaces in no more than 3 steps.
 
 ### Storage
 - **NFR-STOR-01**: All stored data must be compressed using the zlib compression algorithm.

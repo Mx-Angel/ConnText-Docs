@@ -8,6 +8,9 @@ This document outlines user stories for the ConnText software. Each user story c
 ### User specific stories
 - As a user, I want to create an account so that I can access the ConnText platform and its features.
 - As a user, I want to delete my account so that I can remove my data from the ConnText platform.
+- As a user, I want to log in to my account so that I can access my personal data and settings.
+- As a user, I want to log out of my account so that I can secure my session when I am done using the platform.
+- As a user, I want to connect my account to an email address so that I can receive notifications and reset my password if needed.
 - As a user, I want to enable two-factor authentication so that I can enhance the security of my account.
 - As a user, I want to create or edit my account image so that I can personalize my profile.
 - As a user, I want to create or edit my account name so that I can identify myself clearly on the platform.
@@ -35,10 +38,30 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a user, I want to search through messages so that I can find specific information or conversations quickly.
 - As a user, I want theming support so that I can customize the appearance of the platform to my liking.
 - As a user, I want to use custom plugins for my instance of ConnText so that I can extend the functionality of the ConnText platform according to my needs.
+- As a user, I want to view my account information so that I can see my current profile details and settings.
+- As a user, I want to change my password so that I can maintain account security.
+- As a user, I want to verify my email address so that I can secure my account and receive important notifications.
+- As a user, I want to view information about other users so that I can learn more about people I'm communicating with.
+- As a user, I want to view server member lists so that I can see who else is in the community.
+- As a user, I want to receive in-app notifications so that I can stay updated on activities while using the platform.
+- As a user, I want to receive push notifications so that I can stay informed even when not actively using the platform.
+- As a user, I want to make voice calls so that I can communicate with others using audio.
+- As a user, I want to participate in group messaging so that I can communicate with multiple people at once.
+
+### Platform & Accessibility stories
+- As a user, I want screen reader support so that I can use ConnText with assistive technologies.
+- As a user, I want keyboard-only navigation so that I can use the platform without a mouse.
+- As a user, I want high contrast mode so that I can better see the interface.
+- As a user, I want multi-language support so that I can use ConnText in my preferred language.
+- As a user, I want to use ConnText on desktop, mobile, and web so that I can access it from any device.
 
 ### Server specific stories
 - As a user, I want to create a server so that I can host my own communication space.
 - As a user, I want to browse the server file library and only see files from channels I have access to, so that my privacy and permissions are respected.
+- As a user, I want to view server information so that I can learn about the community before joining or while participating.
+- As a user, I want to remove entries from the server file library so that I can help maintain relevant content.
+- As a user, I want to add files to the server library so that I can share resources with the community.
+- As a user, I want to search and filter files in the server library so that I can quickly find the content I need.
 
 ### Server Admin stories (Community Management)
 - As a server admin, I want to create or edit my server image so that I can personalize my server.
@@ -58,6 +81,18 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a server admin, I want to set file upload permissions so that I can control who can contribute content to the server library.
 - As a server admin, I want to enforce channel-based visibility in the server library so that users only see files from channels they have access to.
 - As a server admin, I want to monitor file storage usage so that I can manage space and prevent overuse of server resources.
+- As a server admin, I want to create and delete voice/video channels so that I can provide audio and video communication spaces.
+- As a server admin, I want to apply and edit channel-specific permissions so that I can control access to individual channels.
+- As a server admin, I want to create and delete server roles so that I can establish clear organizational structures.
+- As a server admin, I want to manage role hierarchy so that I can establish proper authority levels within my server.
+- As a server admin, I want to view and modify role permissions so that I can fine-tune what each role can do.
+- As a server admin, I want to assign server-wide permissions so that I can set baseline access levels for all users.
+- As a server admin, I want to view and modify server permissions so that I can maintain proper access control.
+- As a server admin, I want to manage invite permissions so that I can control who can bring new members to the server.
+- As a server admin, I want to reinstate users (unban/lift timeouts) so that I can give people second chances when appropriate.
+- As a server admin, I want to invite users to my server so that I can grow my community.
+- As a server admin, I want to remove files from the server library so that I can maintain relevant and appropriate content.
+- As a server admin, I want to configure server theme settings so that I can customize the visual appearance of my server.
 
 ### System Admin stories (Technical Operations)
 - As a system admin, I want a simple way to host my own ConnText instance so that I can deploy and manage the software infrastructure.
@@ -68,3 +103,7 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a system admin, I want to configure backup procedures so that I can protect against data loss.
 - As a system admin, I want to configure restore procedures so that I can restore lost data.
 - As a system admin, I want to manage system-level security settings so that I can protect the entire ConnText installation.
+- As a system admin, I want to create and delete server instances so that I can manage multiple ConnText deployments.
+- As a system admin, I want to configure instance settings so that I can customize the behaviour of each deployment.
+- As a system admin, I want to monitor system logs so that I can troubleshoot issues and ensure security.
+- As a system admin, I want to access audit logs so that I can track administrative actions and maintain accountability.
