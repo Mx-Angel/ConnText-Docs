@@ -24,6 +24,7 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a user, I want to join multiple servers so that I can participate in different communities.
 - As a user, I want to leave servers so that I can manage my participation in different communities.
 - As a user, I want to have the ability to delete all my data from a server when I leave it so that I can ensure my privacy and data security.
+- As a user, I want to have the ability to opt-out of server backups so that I can control whether my data is included in server-wide backup and restore features.
 - As a user, I want to download/export my data from the ConnText platform so that I can keep a backup or transfer it to another platform.
 - As a user, I want to access the ConnText platform from multiple devices so that I can stay connected regardless of the device I use.
 - As a user, I want to access the ConnText platform from any web browsers so that I can use it on any device without installing additional software. 
@@ -60,6 +61,7 @@ This document outlines user stories for the ConnText software. Each user story c
 
 ### System Admin stories (Technical Operations)
 - As a system admin, I want a simple way to host my own ConnText instance so that I can deploy and manage the software infrastructure.
+- As a system admin, I want to be able to run it as a Docker container so that I can easily deploy and manage the ConnText instance in a containerized environment.
 - As a system admin, I want a simple GUI for managing the backend system so that I can easily configure and maintain the server software.
 - As a system admin, I want an overview dashboard for system health so that I can monitor server performance, resource usage, and technical metrics.
 - As a system admin, I want to manage software updates and rollbacks so that I can keep the system secure and stable.

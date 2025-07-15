@@ -23,6 +23,7 @@ This document will outline the non-functional requirements of the ConnText softw
 - **NFR-SEC-07**: The software must be designed in alignment with OWASP Top 10 security best practices to prevent common vulnerabilities.
 - **NFR-SEC-08**: The system must support granular permission assignment, allowing both role-based and direct user permissions without compromising security isolation.
 - **NFR-SEC-09**: Logs must not contain sensitive information (e.g., passwords, full tokens) and must be protected from unauthorized access.
+- **NFR-SEC-10**: The software should respect user privacy when executing the backup feature, ensuring that user data is not included in backups unless explicitly opted-in by the user.
 
 ### Privacy
 - **NFR-PRIV-01**: The software must allow server-level moderation (blocking, banning, etc.) without exposing user activity or private data to unauthorized parties.
@@ -32,7 +33,7 @@ This document will outline the non-functional requirements of the ConnText softw
 - **NFR-PRIV-05**: The software must provide server admins the ability to configure data residency preferences to keep data within specific jurisdictions.
 - **NFR-PRIV-06**: Users must be able to view and revoke active sessions/devices for their account.
 - **NFR-PRIV-07**: The system must support configurable data retention periods for all user-generated content.
-# Backup and restore features will violate user privacy so changes to the planning need to be made to prevent this.
+- **NFR-PRIV-08**: The system must offer the user the ability to enable or disable whether they want their data to be part of the server's backup feature. (Default: opt-out)
 
 ### Capacity
 - **NFR-CAP-01**: The system must support a minimum of 1,000 concurrent users per deployed server instance under expected operating conditions.
