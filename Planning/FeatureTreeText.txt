@@ -1,0 +1,116 @@
+- User Account & Identity
+    - Account Management
+        - Create Account
+        - Delete Account
+        - Update Account Info (Image, Name, Description, Email, Password)
+        - Create Server-Specific Names
+        - View Account Info
+    - Account Security
+        - Email Verification
+        - Password Reset
+        - Set Deletion of Account Data Server Leave Globally
+        - Set Account Not Included in Backups Globally
+    - Authentication
+        - Login/Logout
+        - Two-Factor Authentication
+    - Presence & Identity
+        - View/Modify Status
+        - Block/Mute Users
+- Communication
+    - Messaging
+        - Private Messaging
+        - Group Messaging
+        - Message Reactions
+        - Message Search
+    - Voice & Video
+        - Voice Calls
+        - Video Calls/Streaming
+        - Screen Sharing
+    - Notifications
+        - In-App Notifications
+        - Push Notifications
+- Servers & Channels
+    - Server Participation
+        - Join Server
+        - Leave Server
+        - Delete Personal Data on Leave
+        - View Member Info
+        - View Server Members
+    - Server Management
+        - Create Server
+        - Search/Filter File Library
+        - Remove Library Entries
+        - View Server Info
+        - Edit Server Info (Name, Description, Image)
+    - Channel Management
+        - Create/Delete Text Channels
+        - Create/Delete Voice/Video Channels
+        - Apply/Edit Channel Permissions
+- Permissions & Roles
+    - Role Management
+        - Create/Delete Roles
+        - Assign/Remove Roles
+        - Assign Permissions to Roles
+        - Manage Role Hierarchy
+        - View Role Permissions
+        - Modify Role Permissions
+        - Manage Individual Permissions
+    - Server Permissions
+        - Assign Server-Wide Permissions
+        - View Server Permissions
+        - Modify Server Permissions
+        - Invite Permissions
+- Moderation & Content Control
+    - Member Moderation
+        - Ban/Kick/Timeout Users
+        - Reinstate Users (Unban/Lift Timeout)
+        - Invite Users
+    - Message Moderation
+        - Delete/Edit Messages
+        - Pin/Unpin Messages
+        - Reply to Messages
+    - File Management
+        - File Upload Permissions
+        - Channel-Based File Visibility
+        - Monitor Storage Usage
+        - View File Library
+        - Add/Remove Files (RBAC)
+        - Search/Filter Files in Library
+- Customization & Plugins
+    - Themes
+        - User Theme Settings
+        - Server Theme Settings
+    - Plugins
+        - Support for Custom Plugins (User & Server)
+- Privacy & Data Control
+    - Data Management
+        - Export/Download Personal Data
+        - Choose Profile Data Storage Location
+- System Administration
+    - Instance Management
+        - Create/Delete Server Instance
+        - Configure Instance Settings
+    - Software Maintenance
+        - Update Software
+        - System Health Monitoring
+    - Backup & Restore
+        - Configure Backup/Restore Settings
+        - Restore from Backup
+    - System Security
+        - Log Monitoring
+        - Audit Logs
+    - System Monitoring
+        - Health Status
+        - Resource Usage
+- Platform Features
+    - Cross-Platform Support
+        - Desktop Application
+        - Mobile Application
+        - Web Application
+    - Accessibility Features
+        - Screen Reader Support
+        - Keyboard Navigation
+        - High Contrast Mode
+    - Localization & Internationalization
+        - Multi-Language Support
+        - Regional Settings
