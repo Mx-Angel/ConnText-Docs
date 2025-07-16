@@ -8,27 +8,35 @@
     - Account Security
         - Email Verification
         - Password Reset
-        - Set Deletion of Account Data Server Leave Globally
+        - Set Personal Data deletion on Server Leave Globally
         - Set Account Not Included in Backups Globally
     - Authentication
-        - Login/Logout
+        - Login
+        - Logout
         - Two-Factor Authentication
     - Presence & Identity
-        - View/Modify Status
-        - Block/Mute Users
+        - View Status
+        - Modify Status
+        - Block Users
+        - Mute Users
+        - Unblock Users
+        - Unmute Users
+        - Set Custom Status
 - Communication
     - Messaging
         - Private Messaging
         - Group Messaging
         - Message Reactions
         - Message Search
+        - Edit Messages
+        - Reply to Messages
     - Voice & Video
         - Voice Calls
-        - Video Calls/Streaming
+        - Video Streaming
         - Screen Sharing
     - Notifications
         - In-App Notifications
-        - Push Notifications
+        - OS Notifications
 - Servers & Channels
     - Server Participation
         - Join Server
@@ -38,18 +46,25 @@
         - View Server Members
     - Server Management
         - Create Server
-        - Search/Filter File Library
+        - Search File Library
         - Remove Library Entries
         - View Server Info
         - Edit Server Info (Name, Description, Image)
     - Channel Management
-        - Create/Delete Text Channels
-        - Create/Delete Voice/Video Channels
-        - Apply/Edit Channel Permissions
+        - Create Text Channels
+        - Delete Text Channels
+        - Create Voice Channels
+        - Delete Voice Channels
+        - Enable Video Streaming
+        - Disable Video Streaming
+        - Enable Screen Sharing
+        - Disable Screen Sharing
 - Permissions & Roles
     - Role Management
-        - Create/Delete Roles
-        - Assign/Remove Roles
+        - Create Roles
+        - Delete Roles
+        - Assign Roles to Users
+        - Remove Roles from Users
         - Assign Permissions to Roles
         - Manage Role Hierarchy
         - View Role Permissions
@@ -60,42 +75,51 @@
         - View Server Permissions
         - Modify Server Permissions
         - Invite Permissions
+    - Channel Permissions
+        - Assign Channel-Specific Permissions
+        - View Channel Permissions
+        - Modify Channel Permissions
+    - File Permissions
+        - File Upload Permissions
+        - Channel-Based File Visibility
 - Moderation & Content Control
     - Member Moderation
         - Ban/Kick/Timeout Users
         - Reinstate Users (Unban/Lift Timeout)
         - Invite Users
     - Message Moderation
-        - Delete/Edit Messages
-        - Pin/Unpin Messages
-        - Reply to Messages
+        - Delete Messages
+        - Pin Messages
+        - Unpin Messages
     - File Management
-        - File Upload Permissions
-        - Channel-Based File Visibility
         - Monitor Storage Usage
         - View File Library
-        - Add/Remove Files (RBAC)
-        - Search/Filter Files in Library
+        - Add Files
+        - Remove Files
+        - Search for Files in Library
 - Customization & Plugins
     - Themes
         - User Theme Settings
         - Server Theme Settings
     - Plugins
-        - Support for Custom Plugins (User & Server)
+        - Support for Client-side Custom Plugins
+        - Support for Server-side Custom Plugins
+        - Plugin Manager
 - Privacy & Data Control
     - Data Management
         - Export/Download Personal Data
         - Choose Profile Data Storage Location
 - System Administration
     - Instance Management
-        - Create/Delete Server Instance
         - Configure Instance Settings
     - Software Maintenance
         - Update Software
         - System Health Monitoring
     - Backup & Restore
-        - Configure Backup/Restore Settings
-        - Restore from Backup
+        - Configure Backup Settings
+        - Configure Restore Settings
+        - Create Backup
+        - Restore Backup
     - System Security
         - Log Monitoring
         - Audit Logs

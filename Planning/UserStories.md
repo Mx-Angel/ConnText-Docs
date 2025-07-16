@@ -47,6 +47,7 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a user, I want to receive push notifications so that I can stay informed even when not actively using the platform.
 - As a user, I want to make voice calls so that I can communicate with others using audio.
 - As a user, I want to participate in group messaging so that I can communicate with multiple people at once.
+- As a user, I want to have a plugin manager so that I can easily install, update, and manage plugins for my ConnText instance.
 
 ### Platform & Accessibility stories
 - As a user, I want screen reader support so that I can use ConnText with assistive technologies.
@@ -61,7 +62,6 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a user, I want to view server information so that I can learn about the community before joining or while participating.
 - As a user, I want to remove entries from the server file library so that I can help maintain relevant content.
 - As a user, I want to add files to the server library so that I can share resources with the community.
-- As a user, I want to search and filter files in the server library so that I can quickly find the content I need.
 
 ### Server Admin stories (Community Management)
 - As a server admin, I want to create or edit my server image so that I can personalize my server.
@@ -76,6 +76,7 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a server admin, I want to create voice chat channels so that I can enable audio communication among users.
 - As a server admin, I want to moderate my server by adding, removing, timing out, kicking, and banning users so that I can maintain a healthy community.
 - As a server admin, I want to pin, reply to, delete, and edit messages so that I can moderate conversations effectively.
+- As a server admin, I want to have a plugin manager so that I can easily install, update, and manage plugins for my server.
 - As a server admin, I want to manage server plugins and themes so that I can customize the functionality and appearance of my server.
 - As a server admin, I want to enforce certain authentication methods for my server so that I can enhance security and user verification.
 - As a server admin, I want to set file upload permissions so that I can control who can contribute content to the server library.
