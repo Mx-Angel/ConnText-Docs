@@ -29,7 +29,7 @@
         - Message Reactions
         - Message Search
         - Edit Messages
-        - Reply to Messages
+        - Quote Reply to Messages
     - Voice & Video
         - Voice Calls
         - Video Streaming
@@ -71,7 +71,6 @@
         - Modify Role Permissions
         - Manage Individual Permissions
     - Server Permissions
-        - Assign Server-Wide Permissions
         - View Server Permissions
         - Modify Server Permissions
         - Invite Permissions
@@ -110,8 +109,6 @@
         - Export/Download Personal Data
         - Choose Profile Data Storage Location
 - System Administration
-    - Instance Management
-        - Configure Instance Settings
     - Software Maintenance
         - Update Software
         - System Health Monitoring
@@ -137,4 +134,3 @@
         - High Contrast Mode
     - Localization & Internationalization
         - Multi-Language Support
-        - Regional Settings
