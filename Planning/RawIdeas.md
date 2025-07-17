@@ -1,6 +1,6 @@
 # Ideas for ConnText Software
 
-> This is an unfiltered idea dump used during early planning. It’s not meant to be exhaustive, correct, or refined—just a central list of brainstormed possibilities. It feeds into user stories, NFRs, and design planning later in the SDLC.
+> This is an unfiltered idea dump used during early planning. It’s not meant to be exhaustive, correct, or refined—just a central list of brainstormed possibilities. It feeds into user stories, NFRs, and design planning later in the SDLC. For future reference, I have implemented the MoSCoW prioritization method, but this should not happen until after all the requirements have been gathered and the user stories have been created. 
 
 ## Overview
 This document is a collection of raw ideas for features and functionalities that could be included in the ConnText software. These ideas are intended to be refined and prioritized based on user needs and technical feasibility.
