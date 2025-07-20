@@ -13,7 +13,6 @@ The value vs effort matrix will be structured as a table with the following colu
 - **Quadrant**: The quadrant in the Value vs Effort matrix where the task falls
 
 ### Value vs Effort Matrix
-
 This project uses a Value vs Effort matrix to prioritize tasks. Each task is evaluated on two dimensions which are **Value** and **Effort**. The tasks are then categorized into four quadrants based on their scores. The metrics go from low to high number, which is equivalent to low to high priority. The higher the number, the more important the task is to the project.
 
 **Value Scale (1-5):**
