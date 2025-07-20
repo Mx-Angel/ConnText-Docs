@@ -10,28 +10,33 @@ Overall the metrics go from low to high number this equivalent to low to high pr
 - **Task Name**: The name of the task to be completed.
 - **Effort**: The estimated effort required to complete the task.
 - **Value**: The value or benefit the task provides to the user or the system.
-- **Quadrant**: The quadrant in the Value vs Effort matrix where the task falls:
-  - **Q1**: Low Value (1-2), Low Effort (1-2) - Fill Ins
-  - **Q2**: Low Value (1-2), High Effort (3-5) - Time Sinks
-  - **Q3**: High Value (3-5), Low Effort (1-2) - Quick Wins
-  - **Q4**: High Value (3-5), High Effort (3-5) - Major Projects 
+- **Quadrant**: The quadrant in the Value vs Effort matrix where the task falls
 
-### Effort and Value Measurement
-Effort is measured on a scale of 1 to 5, where:
+### Value vs Effort Matrix
+
+This project uses a Value vs Effort matrix to prioritize tasks. Each task is evaluated on two dimensions:
+
+**Value Scale (1-5):**
+- 1 = Very Low Value
+- 2 = Low Value  
+- 3 = Medium Value
+- 4 = High Value
+- 5 = Very High Value
+
+**Effort Scale (1-5):**
 - 1 = Very Low Effort
 - 2 = Low Effort
 - 3 = Medium Effort
 - 4 = High Effort
-- 5 = Very High Effort  
+- 5 = Very High Effort
 
-Value is also measured on a scale of 1 to 5, where:
-- 1 = Very Low Value
-- 2 = Low Value
-- 3 = Medium Value
-- 4 = High Value
-- 5 = Very High Value  
+**Resulting Quadrants:**
+- **Q1**: Low Value (1-2), Low Effort (1-2) - **Fill Ins** - Do when you have spare time
+- **Q2**: Low Value (1-2), High Effort (3-5) - **Time Sinks** - Avoid or deprioritize  
+- **Q3**: High Value (3-5), Low Effort (1-2) - **Quick Wins** - Do first
+- **Q4**: High Value (3-5), High Effort (3-5) - **Major Projects** - Plan carefully
 
-All of these metrics are subjective and can be adjusted based on group consensus.
+*All assessments are subjective and can be adjusted based on a group consensus.*
 
 | Task Name                                            | Effort | Value | Quadrant |
 |------------------------------------------------------|--------|-------|----------|
