@@ -11,10 +11,10 @@ Overall the metrics go from low to high number this equivalent to low to high pr
 - **Effort**: The estimated effort required to complete the task.
 - **Value**: The value or benefit the task provides to the user or the system.
 - **Quadrant**: The quadrant in the Value vs Effort matrix where the task falls:
-  - **Q1**: Low Value, Low Effort (Fill Ins)
-  - **Q2**: Low Value, High Effort (Time Sinks)
-  - **Q3**: High Value, Low Effort (Quick Wins)
-  - **Q4**: High Value, High Effort (Major Projects)
+  - **Q1**: Low Value (1-2), Low Effort (1-2) - Fill Ins
+  - **Q2**: Low Value (1-2), High Effort (3-5) - Time Sinks
+  - **Q3**: High Value (3-5), Low Effort (1-2) - Quick Wins
+  - **Q4**: High Value (3-5), High Effort (3-5) - Major Projects 
 
 ### Effort and Value Measurement
 Effort is measured on a scale of 1 to 5, where:
