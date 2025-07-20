@@ -5,8 +5,8 @@ This document outlines the tasks and their priority level for the project. This 
 
 ## Tasks and Priorities
 
-### Legend
-Overall the metrics go from low to high number this equivalent to low to high priority. The higher the number, the more important the task is to the project.
+### Structure
+The value vs effort matrix will be structured as a table with the following columns:
 - **Task Name**: The name of the task to be completed.
 - **Effort**: The estimated effort required to complete the task.
 - **Value**: The value or benefit the task provides to the user or the system.
@@ -14,7 +14,7 @@ Overall the metrics go from low to high number this equivalent to low to high pr
 
 ### Value vs Effort Matrix
 
-This project uses a Value vs Effort matrix to prioritize tasks. Each task is evaluated on two dimensions:
+This project uses a Value vs Effort matrix to prioritize tasks. Each task is evaluated on two dimensions which are **Value** and **Effort**. The tasks are then categorized into four quadrants based on their scores. The metrics go from low to high number, which is equivalent to low to high priority. The higher the number, the more important the task is to the project.
 
 **Value Scale (1-5):**
 - 1 = Very Low Value
@@ -32,7 +32,7 @@ This project uses a Value vs Effort matrix to prioritize tasks. Each task is eva
 
 **Resulting Quadrants:**
 - **Q1**: Low Value (1-2), Low Effort (1-2) - **Fill Ins** - Do when you have spare time
-- **Q2**: Low Value (1-2), High Effort (3-5) - **Time Sinks** - Avoid or deprioritize  
+- **Q2**: Low Value (1-2), High Effort (3-5) - **Time Sinks** - Avoid or de-prioritise  
 - **Q3**: High Value (3-5), Low Effort (1-2) - **Quick Wins** - Do first
 - **Q4**: High Value (3-5), High Effort (3-5) - **Major Projects** - Plan carefully
 
