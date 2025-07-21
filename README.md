@@ -13,4 +13,6 @@ The documentation was created in a specific order to help developers and users u
 5. [Task Prioritisation](Planning/TaskPrioritisation.md)
 6. [RAD Register](Planning/RADRegister.md)
 
+Note that the documentation isn't perfect, no documentation is, but if you find any mistakes or have suggestions for improvements, please feel free to open an issue or a pull request.
+
 All documentation is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
