@@ -13,7 +13,7 @@ The ConnText project is built using a combination of technologies, the ones used
 | Audio/Video Codec | libwebrtc                     | Media encoding/decoding support via WebRTC    |
 | Build System      | CMake                         | Widely used in C++ ecosystems                 |
 | Storage           | Local filesystem              | For cache, local media, temp user data        |
-| Authentication    | Local certificates + tokens   | Validate user sessions if auth server is used |
+| Authentication    | Passwords + tokens            | Validate user sessions if auth server is used |
 | Notifications     | OS-level APIs (Qt wrappers)   | Integrate with native system notifications    |
 | Plugin Support    | Custom Plugin Interface (TBD) | User-extensible features (client-side only)   |
 | Version Control   | Git + GitHub                  | Project source management                     |
