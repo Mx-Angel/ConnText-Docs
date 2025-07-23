@@ -1,6 +1,6 @@
-# Angel's Agile Software Development Methodology (VOID)
+# Angel's Agile Software Development Methodology
 
-> WARNING: This has been voided due to the lack of practical application in open-source development. It can still be used as a reference for understanding agile principles, as it does its best to follow the 12 principles of the Agile Manifesto and 4 Pillars of Agile. The 5 main steps will still be used, but the process defined here will not.
+> Note: This will be followed best it can be, but as it is agile, flexibility is always an option and there may be parts left out or modified. This is not a rigid structure and can be changed to fit different use cases
 
 ## Core processes:
 - Plan
@@ -8,8 +8,6 @@
 - Develop
 - Test
 - Review
-
-Note: Any of this can be changed to fit your use case.
 
 ## Plan
 The planning phase is a collaborative effort to set a shared vision for the project. The team, alongside stakeholders and product owners, defines business objectives, desired outcomes, and priorities. Requirements are captured mainly as user stories focused on value to the user, and not as exhaustive specifications. Planning is treated as a collaborative activity, integrating flexibility to welcome changes and continuously update priorities based on stakeholder feedback and evolving understanding. Hard requirements (such as compliance or immovable deadlines) are clarified openly. The main artifacts are lightweight, living documents such as:
