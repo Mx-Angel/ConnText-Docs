@@ -43,4 +43,4 @@ Each iteration ends with a review/demonstration (sprint review), where stakehold
 - Updated backlog (with new/changed requirements or insights)
 - Retrospective actions/notes
 
-Overall, our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+Overall, our highest priority is to satisfy the users through early and continuous delivery of valuable software.

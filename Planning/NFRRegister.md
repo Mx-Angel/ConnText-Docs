@@ -15,7 +15,7 @@ This document will outline the non-functional requirements of the ConnText softw
 
 ### Security
 - **NFR-SEC-01**: All data in transit must be encrypted using industry-standard end-to-end encryption protocols (e.g., TLS 1.3 or higher).
-- **NFR-SEC-02**: All user data stored on disk must be encrypted at rest using AES-256 or a similar secure standard.
+- **NFR-SEC-02**: All personal user data stored on disk must be encrypted at rest using AES-256 or a similar secure standard.
 - **NFR-SEC-03**: The system must support multi-factor authentication mechanisms for user accounts.
 - **NFR-SEC-04**: Server-side access to administrative functions must be protected through role-based access controls (RBAC).
 - **NFR-SEC-05**: Password storage must follow best practices, including salting and hashing using a strong algorithm like bcrypt or Argon2.
@@ -28,13 +28,14 @@ This document will outline the non-functional requirements of the ConnText softw
 
 ### Privacy
 - **NFR-PRIV-01**: The software must allow server-level moderation (blocking, banning, etc.) without exposing user activity or private data to unauthorized parties.
-- **NFR-PRIV-02**: Users must have control over their personal data, including the ability to export, modify, or delete their information.
+- **NFR-PRIV-02**: Users must have control over their personal data, including the ability to export, modify, or delete their information. (Note **NFR-SEC-02**)
 - **NFR-PRIV-03**: The system must provide granular privacy controls, allowing users to choose what information is shared and with whom.
 - **NFR-PRIV-04**: Users must be able to block and mute other users privately, without the blocked/muted users being notified or able to detect this action.
 - **NFR-PRIV-05**: The software must provide server admins the ability to configure data residency preferences to keep data within specific jurisdictions.
-- **NFR-PRIV-06**: Users must be able to view and revoke active sessions/devices for their account.
+- **NFR-PRIV-06**: Users must be able to view and revoke active sessions/devices for their account. (Restricted due to **NFR-PRIV-09**)
 - **NFR-PRIV-07**: The system must support configurable data retention periods for all user-generated content.
 - **NFR-PRIV-08**: The system must offer the user the ability to enable or disable whether they want their data to be part of the server's backup feature. (Default: opt-out)
+- **NFR-PRIV-09**: User sessions are device-specific and will not persist across devices. Logging in on one device does not create or synchronize sessions with other devices. (This is a limitation of the software architecture itself)
 
 ### Capacity
 - **NFR-CAP-01**: The system must support a minimum of 1,000 concurrent users per deployed server instance under expected operating conditions.
