@@ -6,6 +6,7 @@ This repository will have all the documentation related to [ConnText-Desktop](ht
 
 The documentation was created in a specific order to help developers and users understand the project, its features, and how to contribute. It is structured to provide a comprehensive overview of the project, including its architecture, design decisions, and implementation details. The documentation should be read in the following order:
 
+# Planning
 1. [Raw Ideas](Planning/RawIdeas.md)
 2. [User Stories](Planning/UserStories.md)
 3. [NFR Register](Planning/NFRRegister.md)
