@@ -21,8 +21,8 @@ The authorisation and authentication service is responsible for verifying user c
 #### Messaging & Media Service
 The messaging and media service is responsible for handling text communications, and file transfers. It manages the storage and retrieval of messages, media files, and other related data. This service ensures that users can communicate effectively and securely.
 
-#### Realtime Communication Service
-The realtime communication service is responsible for managing connections between users for voice and video calls. It will handle the process of establishing, maintaining, and terminating these connections. This service ensures that users can communicate in real-time without interruptions.
+#### Real-time Communication Service
+The real-time communication service is responsible for managing connections between users for voice and video calls. It will handle the process of establishing, maintaining, and terminating these connections. This service ensures that users can communicate in real-time without interruptions.
 
 ### Backend Databases
 
