@@ -3,6 +3,8 @@
 ## Overview
 This is a supporting document that will provide rationale for decisions made with the architecture. This supports the [ArchitectureDiagram.drawio](Diagrams/BackendArchitectureDiagram.drawio)/[ArchitectureDiagram.png](Diagrams/BackendArchitectureDiagram.png) files.
 
+The backend diagram will use the concept of an architecture diagram to show the different services that make up the server. Whilst the frontend diagram will use a component diagram to show the different components that make up the client application.
+
 ### Frontend Services
 
 
@@ -25,6 +27,7 @@ The messaging and media service is responsible for handling text communications,
 The real-time communication service is responsible for managing connections between users for voice and video calls. It will handle the process of establishing, maintaining, and terminating these connections. This service ensures that users can communicate in real-time without interruptions.
 
 ### Backend Databases
+This section describes the databases used by the ConnText backend services. Each database is designed to support specific set of microservices and functionalities.
 
 #### Audit Database
 The audit database is connected to the system management service and is used to store logs and audit trails of system operations. This database is essential for monitoring the health of the ConnText server and diagnosing issues.
