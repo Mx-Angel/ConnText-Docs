@@ -10,11 +10,13 @@ The documentation was created in a specific order to help developers and users u
 1. [Raw Ideas](Planning/RawIdeas.md)
 2. [User Stories](Planning/UserStories.md)
 3. [NFR Register](Planning/NFRRegister.md)
-4. [Feature Tree (text)](Planning/FeatureTreeText.txt)/[Feature Tree (diagram)](Diagrams/FeatureTree.png)
+4. [Feature Tree Diagram](Diagrams/FeatureTree.png)
 5. [Task Prioritisation](Planning/TaskPrioritisation.md)
 6. [RAD Register](Planning/RADRegister.md)
 7. [Roadmap](Planning/RoadMap.md)
 8. [Tech Stack](Planning/TechStack.md)
+
+> Note that a text version of the Feature Tree diagram is available in [Planning/FeatureTreeText](Planning/FeatureTreeText.txt).
 
 # Design
 1. Architecture
