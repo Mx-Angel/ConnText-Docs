@@ -17,7 +17,10 @@ The documentation was created in a specific order to help developers and users u
 8. [Tech Stack](Planning/TechStack.md)
 
 # Design
-1. [Architecture Diagram](Diagrams/ArchitectureDiagram.png) + [Architecture Notes](Design/ArchitectureNotes.md)
+1. Architecture
+    - [Architecture Overview](Design/ArchitectureNotes.md)
+    - [Frontend Architecture Diagram](Design/Diagrams/FrontendArchitectureDiagram.png)
+    - [Backend Architecture Diagram](Design/Diagrams/BackendArchitectureDiagram.png)
 
 Note that the documentation isn't perfect, no documentation is, but if you find any mistakes or have suggestions for improvements, please feel free to open an issue or a pull request.
 
