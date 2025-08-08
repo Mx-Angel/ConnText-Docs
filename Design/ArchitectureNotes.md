@@ -5,20 +5,51 @@ This is a supporting document that will provide rationale for decisions made wit
 
 The backend diagram will use the concept of an architecture diagram to show the different services that make up the server. Whilst the frontend diagram will use a component diagram to show the different components that make up the client application.
 
-### Frontend Services
+### Frontend
 
+#### Application Shell Component
+This component will provide the main user interface for the ConnText application. It will be responsible for rendering the UI, managing user interactions, and coordinating communication between different frontend components.
 
-### Backend Services
-The ConnText backend is designed to be modular and scalable so each service is designed to handle a specific aspect of the system. The services communicate with each other mainly using HTTP or WebSockets, depending on the nature of the communication.
+#### Authentication Component
+The authentication component will handle user login, registration, and session management. It will communicate with the authorisation and authentication service to verify user credentials and obtain JWT tokens passing these to the network component when making API requests.
+
+#### Server Management Component
+The server management component will be used to manage server configurations; text channels; user roles; bans; etc. This will allow server administrators to easily configure and maintain their servers.
+
+#### Server Health Component
+The server health component will monitor the health and performance of the ConnText application. It will provide real-time metrics and alerts for system administrators, helping to ensure the application remains responsive and reliable.
+
+#### Real-Time Media Component
+This service will handle real-time audio and video communication between users. It will use WebRTC for connections and provide features such as screen sharing.
+
+#### Communication Component
+This component will facilitate basic non-real-time messaging between users. It will manage the sending and receiving of messages and will be coupled closely with the real-time media component.
+
+#### Media Component
+The media component will handle the uploading, processing, and delivery of media files (images, videos, audio) within the ConnText application. It will ensure that media files are stored efficiently and can be accessed quickly by users.
+
+#### Data Management Component
+The data management component will be responsible for managing the application's data storage and retrieval. It will handle database interactions, data caching, password storage and data synchronization between different services.
+
+#### User Management Component
+The user management component will handle user profiles, preferences, and settings. It will manage user data and ensure that user preferences are respected across the application.
+
+#### Network Component
+The network component will handle all requests between the frontend and backend services. It will manage API calls, WebSocket connections, and other network-related tasks.
+
+### Backend
+The ConnText backend is designed to be modular and scalable so each service is designed to handle a specific aspect of the system. The services communicate with each other mainly using HTTP or WebSockets, depending on the nature of the communication. The diagram will not show all connections, only a high level overview.
 
 #### Gateway Service
-The gateway service is the main entry point for the ConnText server. This service handles incoming requests, routes them to the appropriate services, and manages basic authentication and authorization.
+The gateway service is the main entry point for the ConnText server. This service handles incoming requests, routes them to the appropriate services, and manages basic authentication and authorization. The gateway performs stateless JWT token validation using OAuth2-compliant access tokens, eliminating the need for constant communication with the A&A service for routine authentication checks.
 
 #### System Management Service
 The system management service is responsible for managing the overall state of the ConnText server. It handles auditing, logging, and system-level operations. It will also provide metrics and health checks for the server. This service ensures that the server runs smoothly and problems can be diagnosed quickly.
 
 #### Authorisation & Authentication Service
-The authorisation and authentication service is responsible for verifying user credentials and managing user sessions. It will create validation tokens for users and ensure that only authenticated users can access administrative features/actions.
+The authorisation and authentication service is responsible for verifying user credentials and managing user sessions. It implements OAuth2 flows and issues JWT-based access and refresh tokens. The service handles complex authentication scenarios (2FA, password resets) and token lifecycle management, while the gateway service handles routine JWT validation for performance.
+
+> Note: This service creates and manages OAuth2-compliant JWT tokens. The gateway service performs stateless validation of these JWTs for routine requests, only delegating to this service for token refresh, complex permissions, or new authentication events.
 
 #### Messaging & Media Service
 The messaging and media service is responsible for handling text communications, and file transfers. It manages the storage and retrieval of messages, media files, and other related data. This service ensures that users can communicate effectively and securely.
