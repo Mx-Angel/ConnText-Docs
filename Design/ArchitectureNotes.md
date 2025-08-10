@@ -1,9 +1,9 @@
 # Architecture Notes
 
 ## Overview
-This is a supporting document that will provide rationale for decisions made with the architecture. This supports the [ArchitectureDiagram.drawio](Diagrams/BackendArchitectureDiagram.drawio)/[ArchitectureDiagram.png](Diagrams/BackendArchitectureDiagram.png) files.
+This is a supporting document that will provide about both the front and backend architecture. This supports the [FrontendArchitectureDiagram](Diagrams/FrontendArchitectureDiagram.png) and [BackendArchitectureDiagram](Diagrams/BackendArchitectureDiagram.png) diagrams.
 
-The backend diagram will use the concept of an architecture diagram to show the different services that make up the server. Whilst the frontend diagram will use a component diagram to show the different components that make up the client application.
+The frontend diagram will use a component diagram to show the different components that make up the client application. Whilst the backend diagram will use the concept of an architecture diagram to show the different services that make up the server.
 
 ### Frontend
 
