@@ -23,7 +23,7 @@ The server health component will monitor the health and performance of the ConnT
 This service will handle real-time audio and video communication between users. It will use WebRTC for connections and provide features such as screen sharing.
 
 #### Communication Component
-This component will facilitate basic non-real-time messaging between users. It will manage the sending and receiving of messages and will be coupled closely with the real-time media component.
+This component will facilitate both non-real-time and real-time messaging between users. It will manage the sending and receiving of messages and will be coupled closely with the real-time media component. It will be one of only 2 components allowed to directly interface with the network component
 
 #### Media Component
 The media component will handle the uploading, processing, and delivery of media files (images, videos, audio) within the ConnText application. It will ensure that media files are stored efficiently and can be accessed quickly by users.
