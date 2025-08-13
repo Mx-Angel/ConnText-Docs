@@ -6,6 +6,7 @@ This is a supporting document that will provide about both the front and backend
 The frontend diagram will use a component diagram to show the different components that make up the client application. Whilst the backend diagram will use the concept of an architecture diagram to show the different services that make up the server.
 
 ### Frontend
+Each component will have a specific role and responsibility within the ConnText application, allowing for modular development and easier maintenance. Access of data will also be restricted to the relevant components, e.g. the user management component is the only component with access to user information.
 
 #### Application Shell Component
 This component will provide the main user interface for the ConnText application. It will be responsible for rendering the UI, managing user interactions, and coordinating communication between different frontend components.
@@ -20,19 +21,19 @@ The server management component will be used to manage server configurations; te
 The server health component will monitor the health and performance of the ConnText application. It will provide real-time metrics and alerts for system administrators, helping to ensure the application remains responsive and reliable.
 
 #### Real-Time Media Component
-This service will handle real-time audio and video communication between users. It will use WebRTC for connections and provide features such as screen sharing.
+This service will handle real-time audio and video communication between users. It will use WebRTC for connections and provide features such as screen sharing. This component will work closely with the communication component to ensure seamless media transmission.
 
 #### Communication Component
-This component will facilitate both non-real-time and real-time messaging between users. It will manage the sending and receiving of messages and will be coupled closely with the real-time media component. It will be one of only 2 components allowed to directly interface with the network component
+This component will facilitate both non-real-time and real-time communication between users. It will manage the sending and receiving of messages and will be coupled closely with the real-time media component. It will be the only component allowed to directly interface with the network component. Providing a single point of contact for all communication-related tasks.
 
 #### Media Component
-The media component will handle the uploading, processing, and delivery of media files (images, videos, audio) within the ConnText application. It will ensure that media files are stored efficiently and can be accessed quickly by users.
+The media component will handle the uploading and processing of media files (images, videos, audio) within the ConnText application. It will ensure that media files are stored efficiently and can be accessed quickly by the user.
 
 #### Data Management Component
-The data management component will be responsible for managing the application's data storage and retrieval. It will handle database interactions, data caching, password storage and data synchronization between different services.
+The data management component will be responsible for managing the application's data storage and retrieval. It will handle database interactions, data caching, password storage and data synchronization between different services. This is the main component for data-related operations and will store application data on the users device with restrictions on access and sharing.
 
 #### User Management Component
-The user management component will handle user profiles, preferences, and settings. It will manage user data and ensure that user preferences are respected across the application.
+The user management component will handle user profiles, preferences, and settings. It will manage user data and ensure that user preferences are respected across the application. It will also be the point of contact for user-related operations as details about the user should be routed through this component.
 
 #### Network Component
 The network component will handle all requests between the frontend and backend services. It will manage API calls, WebSocket connections, and other network-related tasks.
