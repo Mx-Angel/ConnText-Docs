@@ -6,6 +6,12 @@ This repository will have all the documentation related to [ConnText-Desktop](ht
 
 The documentation was created in a specific order to help developers and users understand the project, its features, and how to contribute. It is structured to provide a comprehensive overview of the project, including its architecture, design decisions, and implementation details. The documentation should be read in the following order:
 
+# Development Tools
+- [Visual Studio Code](https://code.visualstudio.com/) (Feel free to use your IDE of choice)
+- [Draw.io](https://app.diagrams.net/)
+- [Docker](https://www.docker.com/)
+- [PenPot](https://penpot.app/)
+
 # Planning
 1. [Raw Ideas](Planning/RawIdeas.md)
 2. [User Stories](Planning/UserStories.md)
