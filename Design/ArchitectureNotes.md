@@ -1,7 +1,7 @@
 # Architecture Notes
 
 ## Overview
-This is a supporting document that will provide about both the front and backend architecture. This supports the [FrontendArchitectureDiagram](Diagrams/FrontendArchitectureDiagram.png) and [BackendArchitectureDiagram](Diagrams/BackendArchitectureDiagram.png) diagrams.
+This is a supporting document that will provide about both the front and backend architecture. This supports the [FrontendArchitectureDiagram](DiagramImages/Architecture/FrontendArchitectureDiagram.png) and [BackendArchitectureDiagram](DiagramImages/Architecture/BackendArchitectureDiagram.png) diagrams.
 
 The frontend diagram will use a component diagram to show the different components that make up the client application. Whilst the backend diagram will use the concept of an architecture diagram to show the different services that make up the server.
 
