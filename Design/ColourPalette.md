@@ -5,7 +5,7 @@ This file provides a comprehensive overview of the color palette used in the Con
 
 ## Light Theme (Default)
 - **Primary Color**: #BF80FF
-- **Secondary Color**: #8F52CC
+- **Secondary Color**: #6627a5
 - **Accent Color**: #9e4bf0
 
 ## Dark Theme
