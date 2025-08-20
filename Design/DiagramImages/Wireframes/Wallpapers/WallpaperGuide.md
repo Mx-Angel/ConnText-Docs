@@ -1,0 +1,67 @@
+# Wallpaper Information
+
+## Overview
+This document provides information about the wallpapers used in the application, including their design, usage, and any relevant details for implementation.
+
+## Relevant Links
+- [Wallpaper Generator](https://app.haikei.app/)
+
+### Latte
+Template: Wave  
+Variants:
+ - Style: Solid
+ - Interpolation: Wave
+
+Direction: Upwards
+Colour:
+ - Background: #EFF1F5
+ - Fill: #DCE0E8
+
+Shape:
+ - Any settings (You don't need to get it perfect)
+Size: 1920x1080
+
+### Frappé
+Template: Wave  
+Variants:
+ - Style: Solid
+ - Interpolation: Wave
+
+Direction: Upwards
+Colour:
+ - Background: #303446
+ - Fill: #232634
+
+Shape:
+ - Any settings (You don't need to get it perfect)
+Size: 1920x1080
+
+### Macchiato
+Template: Wave
+Variants:
+ - Style: Solid
+ - Interpolation: Wave
+
+Direction: Upwards
+Colour:
+ - Background: #24273a
+ - Fill: #181926
+
+Shape:
+ - Any settings (You don't need to get it perfect)
+Size: 1920x1080
+
+### Mocha
+Template: Wave
+Variants:
+ - Style: Solid
+ - Interpolation: Wave
+
+Direction: Upwards
+Colour:
+ - Background: #1e1e2e
+ - Fill: #11111b
+
+Shape:
+ - Any settings (You don't need to get it perfect)
+Size: 1920x1080
