@@ -3,11 +3,14 @@
 ## Overview
 This file provides a comprehensive overview of the color palette used in the ConnText application. The colour palette used it based of off the Catppuccin colour scheme. All 4 main palette colours; Latte; Frappé; Macchiato; and Mocha. 
 
+> I was not able to follow the colour palette exactly as specified in the Catppuccin documentation due to conflicts with the WCAG guidelines, as a result I made some adjustments to ensure better accessibility. Where this colour palette differs from the original it will be noted using a <span style="color: red;">red</span> font. Examples: "Button Text" is a new entry; "Subtext 2" is an addition; etc.
+
 ## Related Links
  - [Catppuccin Repository](https://github.com/catppuccin/catppuccin)
  - [Catppuccin Style Guide](https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md)
  - [Catppuccin Color Palette](https://catppuccin.com/palette/)
  - [Catppuccin Specification](https://github.com/catppuccin/catppuccin/blob/main/docs/specs.md)
+ - [WCAG Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
 ## Latte Theme (Default)
 <table>
@@ -92,12 +95,15 @@ This file provides a comprehensive overview of the color palette used in the Con
     <td>Sub-Headlines, Labels</td>
     <td>
       Subtext 0,<br>
-      Subtext 1
+      Subtext 1,<br>
+      <span style="color: red;">Subtext 2</span>
     </td>
     <td>
       #6c6f85
       <br>
       #5c5f77
+      <br>
+      #54576D
     </td>
   </tr>
   <tr>
@@ -140,6 +146,13 @@ This file provides a comprehensive overview of the color palette used in the Con
     <td>Blue</td>
     <td>
       #1e66f5
+    </td>
+  </tr>
+  <tr>
+    <td><span style="color: red;">Button Text</span></td>
+    <td>White</td>
+    <td>
+      #f2f6f7
     </td>
   </tr>
   <tr>
@@ -261,37 +274,52 @@ This file provides a comprehensive overview of the color palette used in the Con
   </tr>
   <tr>
     <td>Links, URLs</td>
-    <td>Blue</td>
     <td>
-      #8caaee
+      Blue, <br>
+      <span style="color: red;">Alt Blue</span>
+    </td>
+    <td>
+      #8CAAEE, <br>
+      #9AB3EF
     </td>
   </tr>
   <tr>
     <td>Success</td>
     <td>Green</td>
     <td>
-      #a6d189
+      #A6D189
     </td>
   </tr>
   <tr>
     <td>Warnings</td>
     <td>Yellow</td>
     <td>
-      #e5c890
+      #E5C890
     </td>
   </tr>
   <tr>
     <td>Errors</td>
     <td>Red</td>
     <td>
-      #e78284
+      #E78284
     </td>
   </tr>
   <tr>
     <td>Tags, Pills</td>
-    <td>Blue</td>
     <td>
-      #8caaee
+      Blue, <br>
+      <span style="color: red;">Alt Blue</span>
+    </td>
+    <td>
+      #8CAAEE <br>
+      #9AB3EF
+    </td>
+  </tr>
+  <tr>
+    <td><span style="color: red;">Button Text</span></td>
+    <td>Grey</td>
+    <td>
+      #363944
     </td>
   </tr>
   <tr>
@@ -447,6 +475,13 @@ This file provides a comprehensive overview of the color palette used in the Con
     </td>
   </tr>
   <tr>
+    <td><span style="color: red;">Button Text</span></td>
+    <td>Grey</td>
+    <td>
+      #2D2F34
+    </td>
+  </tr>
+  <tr>
     <td>Selection Background</td>
     <td>
       Overlay 2<br>
@@ -596,6 +631,13 @@ This file provides a comprehensive overview of the color palette used in the Con
     <td>Blue</td>
     <td>
       #89b4fa
+    </td>
+  </tr>
+  <tr>
+    <td><span style="color: red;">Button Text</span></td>
+    <td>Grey</td>
+    <td>
+      #252632
     </td>
   </tr>
   <tr>
