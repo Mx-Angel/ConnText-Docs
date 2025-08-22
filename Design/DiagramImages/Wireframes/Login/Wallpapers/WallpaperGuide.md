@@ -14,8 +14,8 @@ Variants:
 
 Direction: Upwards
 Colour:
- - Background: #EFF1F5
- - Fill: #DCE0E8
+ - Background: #DCE0E8
+ - Fill: #CCD0DA
 
 Shape:
  - Any settings (You don't need to get it perfect)
