@@ -21,6 +21,10 @@ Shape:
  - Any settings (You don't need to get it perfect)
 Size: 1920x1080
 
+> The colours used for the background were the crust and surface 0 colours this allowed for the actual background to be used for the main login element.
+
+---
+
 ### Frappé
 Template: Wave  
 Variants:
@@ -36,6 +40,8 @@ Shape:
  - Any settings (You don't need to get it perfect)
 Size: 1920x1080
 
+---
+
 ### Macchiato
 Template: Wave
 Variants:
@@ -50,6 +56,8 @@ Colour:
 Shape:
  - Any settings (You don't need to get it perfect)
 Size: 1920x1080
+
+---
 
 ### Mocha
 Template: Wave
