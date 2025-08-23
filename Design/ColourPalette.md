@@ -1,25 +1,25 @@
 # Colour Palette
 
 ## Overview
-This file provides a comprehensive overview of the color palette used in the ConnText application. The colour palette used it based of off the Catppuccin colour scheme. All 4 main palette colours; Latte; Frappé; Macchiato; and Mocha. 
+This file provides a comprehensive overview of the colour palette used in the ConnText application. The colour palette used it based of off the Catppuccin colour scheme. All 4 main palette colours; Latte; Frappé; Macchiato; and Mocha. 
 
 > I was not able to follow the colour palette exactly as specified in the Catppuccin documentation due to conflicts with the WCAG guidelines, as a result I made some adjustments to ensure better accessibility. Where this colour palette differs from the original it will be noted using a <span style="color: red;">red</span> font. Examples: "Button Text" is a new entry; "Subtext 2" is an addition; etc. Any changes made in use, e.g. background colour for foreground elements will not be recorded as this creates a lot of extra documentation.
 
 ## Related Links
  - [Catppuccin Repository](https://github.com/catppuccin/catppuccin)
  - [Catppuccin Style Guide](https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md)
- - [Catppuccin Color Palette](https://catppuccin.com/palette/)
+ - [Catppuccin Colour Palette](https://catppuccin.com/palette/)
  - [Catppuccin Specification](https://github.com/catppuccin/catppuccin/blob/main/docs/specs.md)
  - [WCAG Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
 ## Latte Theme (Default)
 <table>
   <tr>
-    <th colspan="3" align="center"><h4>Background Colors</h4></th>
+    <th colspan="3" align="center"><h4>Background Colours</h4></th>
   </tr>
   <tr>
     <th>Function</th>
-    <th colspan="2">Colors</th>
+    <th colspan="2">Colours</th>
   </tr>
   <tr>
     <td>Background Pane</td>
@@ -75,7 +75,7 @@ This file provides a comprehensive overview of the color palette used in the Con
   </tr>
   <tr>
     <th>Function</th>
-    <th colspan="2">Colors</th>
+    <th colspan="2">Colours</th>
   </tr>
   <tr>
     <td>Body Copy</td>
@@ -149,7 +149,7 @@ This file provides a comprehensive overview of the color palette used in the Con
     </td>
   </tr>
   <tr>
-    <td><span style="color: red;">Button Text</span></td>
+    <td><span style="color: red;">Inverted Button Text</span></td>
     <td>White</td>
     <td>
       #f2f6f7
@@ -177,11 +177,11 @@ This file provides a comprehensive overview of the color palette used in the Con
 ## Frappé Theme
 <table>
   <tr>
-    <th colspan="3" align="center"><h4>Background Colors</h4></th>
+    <th colspan="3" align="center"><h4>Background Colours</h4></th>
   </tr>
   <tr>
     <th>Function</th>
-    <th colspan="2">Colors</th>
+    <th colspan="2">Colours</th>
   </tr>
   <tr>
     <td>Background Pane</td>
@@ -237,7 +237,7 @@ This file provides a comprehensive overview of the color palette used in the Con
   </tr>
   <tr>
     <th>Function</th>
-    <th colspan="2">Colors</th>
+    <th colspan="2">Colours</th>
   </tr>
   <tr>
     <td>Body Copy</td>
@@ -316,7 +316,7 @@ This file provides a comprehensive overview of the color palette used in the Con
     </td>
   </tr>
   <tr>
-    <td><span style="color: red;">Button Text</span></td>
+    <td><span style="color: red;">Inverted Button Text</span></td>
     <td>Grey</td>
     <td>
       #363944
@@ -344,7 +344,7 @@ This file provides a comprehensive overview of the color palette used in the Con
 ## Macchiato Theme
 <table>
   <tr>
-    <th colspan="3" align="center"><h4>Background Colors</h4></th>
+    <th colspan="3" align="center"><h4>Background Colours</h4></th>
   </tr>
   <tr>
     <th>Function</th>
@@ -404,7 +404,7 @@ This file provides a comprehensive overview of the color palette used in the Con
   </tr>
   <tr>
     <th>Function</th>
-    <th colspan="2">Colors</th>
+    <th colspan="2">Colours</th>
   </tr>
   <tr>
     <td>Body Copy</td>
@@ -475,7 +475,7 @@ This file provides a comprehensive overview of the color palette used in the Con
     </td>
   </tr>
   <tr>
-    <td><span style="color: red;">Button Text</span></td>
+    <td><span style="color: red;">Inverted Button Text</span></td>
     <td>Grey</td>
     <td>
       #2D2F34
@@ -503,11 +503,11 @@ This file provides a comprehensive overview of the color palette used in the Con
 ## Mocha Theme
 <table>
   <tr>
-    <th colspan="3" align="center"><h4>Background Colors</h4></th>
+    <th colspan="3" align="center"><h4>Background Colours</h4></th>
   </tr>
   <tr>
     <th>Function</th>
-    <th colspan="2">Colors</th>
+    <th colspan="2">Colours</th>
   </tr>
   <tr>
     <td>Background Pane</td>
@@ -563,7 +563,7 @@ This file provides a comprehensive overview of the color palette used in the Con
   </tr>
   <tr>
     <th>Function</th>
-    <th colspan="2">Colors</th>
+    <th colspan="2">Colours</th>
   </tr>
   <tr>
     <td>Body Copy</td>
@@ -634,7 +634,7 @@ This file provides a comprehensive overview of the color palette used in the Con
     </td>
   </tr>
   <tr>
-    <td><span style="color: red;">Button Text</span></td>
+    <td><span style="color: red;">Inverted Button Text</span></td>
     <td>Grey</td>
     <td>
       #252632
