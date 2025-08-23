@@ -29,6 +29,10 @@ The documentation was created in a specific order to help developers and users u
     - [Architecture Overview](Design/ArchitectureNotes.md)
     - [Frontend Architecture Diagram](Design/DiagramImages/Architecture/FrontendArchitectureDiagram.png)
     - [Backend Architecture Diagram](Design/DiagramImages/Architecture/BackendArchitectureDiagram.png)
+2. Wireframes
+    - Login Page ([Latte](Design/DiagramImages/Wireframes/Login/LoginLatte.png)/[Frappé](Design/DiagramImages/Wireframes/Login/LoginFrappe.png)/[Macchiato](Design/DiagramImages/Wireframes/Login/LoginMacchiato.png)/[Mocha](Design/DiagramImages/Wireframes/Login/LoginMocha.png))
+    - Sign Up Page ([Latte](Design/DiagramImages/Wireframes/SignUp/SignUpLatte.png)/[Frappé](Design/DiagramImages/Wireframes/SignUp/SignUpFrappe.png)/[Macchiato](Design/DiagramImages/Wireframes/SignUp/SignUpMacchiato.png)/[Mocha](Design/DiagramImages/Wireframes/SignUp/SignUpMocha.png))
+    - Welcome Page ([Latte](Design/DiagramImages/Wireframes/WelcomePage/WelcomePageLatte.png)/[Frappé](Design/DiagramImages/Wireframes/WelcomePage/WelcomePageFrappe.png)/[Macchiato](Design/DiagramImages/Wireframes/WelcomePage/WelcomePageMacchiato.png)/[Mocha](Design/DiagramImages/Wireframes/WelcomePage/WelcomePageMocha.png))
 
 Note that the documentation isn't perfect, no documentation is, but if you find any mistakes or have suggestions for improvements, please feel free to open an issue or a pull request.
 
