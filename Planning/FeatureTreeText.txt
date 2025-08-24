@@ -50,6 +50,10 @@
         - Remove Library Entries
         - View Server Info
         - Edit Server Info (Name, Description, Image)
+    - Advanced Server Features
+        - Save Server Configuration
+        - Import Server Templates
+        - Share Templates with Community
     - Channel Management
         - Create Text Channels
         - Delete Text Channels

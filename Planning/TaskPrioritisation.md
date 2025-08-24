@@ -75,6 +75,9 @@ This project uses a Value vs Effort matrix to prioritize tasks. Each task is eva
 | View Member Info                                     |   1    |   4   |    Q3    |
 | View Server Members                                  |   1    |   3   |    Q3    |
 | Create Server                                        |   2    |   5   |    Q3    |
+| Save Server Configuration                            |   2    |   5   |    Q3    |
+| Import Server Templates                              |   2    |   5   |    Q3    |
+| Share Templates with Community                       |   3    |   3   |    Q4    |
 | Search File Library                                  |   2    |   3   |    Q3    |
 | Remove Library Entries                               |   2    |   5   |    Q3    |
 | View Server Info                                     |   1    |   2   |    Q1    |

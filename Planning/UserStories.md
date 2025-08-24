@@ -62,11 +62,14 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a user, I want to view server information so that I can learn about the community before joining or while participating.
 - As a user, I want to remove entries from the server file library so that I can help maintain relevant content.
 - As a user, I want to add files to the server library so that I can share resources with the community.
+- As a user, I want to import configurations made by other users so that I can set up my server more easily.
 
 ### Server Admin stories (Community Management)
 - As a server admin, I want to create or edit my server image so that I can personalize my server.
 - As a server admin, I want to create or edit my server name so that I can identify my server clearly.
 - As a server admin, I want to create or edit my server description so that I can provide more information about my server.
+- As a server admin, I want to save my server configuration so that I can easily back up and restore my server settings.
+- As a server admin, I want to save my server configuration so that I can share it with the wider community.
 - As a server admin, I want to create and manage server roles so that I can organize users into groups with similar responsibilities.
 - As a server admin, I want to assign specific permissions to server roles so that I can control what actions each role can perform.
 - As a server admin, I want to assign permissions directly to individual users so that I can grant specific access without creating roles.

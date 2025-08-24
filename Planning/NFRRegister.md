@@ -53,6 +53,7 @@ This document will outline the non-functional requirements of the ConnText softw
 - **NFR-COMPA-06**: Admins must be able to run the software on minimal system configurations, with defined hardware baselines for small (1–20 users) and large (20+ users) deployments.
 - **NFR-COMPA-07**: The web-based version of ConnText must be compatible with all major web browsers (e.g., Chrome, Firefox, Safari, Edge).
 - **NFR-COMPA-08**: The web-based version must support Progressive Web App (PWA) features, allowing users to install it on their devices without additional software.
+- **NFR-COMPA-09**: The software should export the server configuration in a standard format (e.g., JSON, YAML) to facilitate sharing and reuse.
 
 ### Reliability and Availability
 - **NFR-REL-01**: The system must be able to recover from unexpected shutdowns or crashes without data loss using automated rollback or recovery procedures.
