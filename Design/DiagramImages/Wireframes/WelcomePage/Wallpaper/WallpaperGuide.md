@@ -7,9 +7,7 @@ This document provides information about the wallpapers used as part of the init
 - [Wallpaper Generator](https://app.haikei.app/)
 
 ### Latte
-Template: Layered Wave  
-Canvas Size: 1920x1080  
-Direction: Upwards
+Template: Layered Wave    
 
 Colour:
  - Background: #DCE0E8
@@ -17,18 +15,21 @@ Colour:
     1. #CCD0DA
     2. #7C7F93
 
+Direction: Upwards
+
 Colour Direction:
  - Top to bottom, darkest to lightest (option 4)
 
 Shape:
  - Any settings (You don't need to get it perfect)
 
+Canvas Size: 1920x1080  
+Export: SVG
+
 ---
 
 ### Frappé
-Template: Layered Wave  
-Canvas Size: 1920x1080  
-Direction: Upwards
+Template: Layered Wave   
 
 Colour:
  - Background: #232634
@@ -36,18 +37,20 @@ Colour:
     1. #414559
     2. #949cbb
 
+Direction: Upwards
+
 Colour Direction:
  - Top to bottom, lightest to darkest (option 4)
 
 Shape:
  - Any settings (You don't need to get it perfect)
 
+Canvas Size: 1920x1080  
+Export: SVG
 ---
 
 ### Macchiato
-Template: Layered Wave  
-Canvas Size: 1920x1080  
-Direction: Upwards
+Template: Layered Wave   
 
 Colour:
  - Background: #181926
@@ -55,18 +58,20 @@ Colour:
     1. #363a4f
     2. #939ab7
 
+Direction: Upwards
+
 Colour Direction:
  - Top to bottom, lightest to darkest (option 4)
 
 Shape:
  - Any settings (You don't need to get it perfect)
 
+Canvas Size: 1920x1080  
+Export: SVG
 ---
 
 ### Mocha
 Template: Layered Wave  
-Canvas Size: 1920x1080  
-Direction: Upwards
 
 Colour:
  - Background: #11111b
@@ -74,8 +79,13 @@ Colour:
     1. #313244
     2. #9399b2
 
+Direction: Upwards
+
 Colour Direction:
  - Top to bottom, lightest to darkest (option 4)
 
 Shape:
  - Any settings (You don't need to get it perfect)
+
+Canvas Size: 1920x1080  
+Export: SVG
