@@ -65,9 +65,9 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>
       #9CA0B0
       <br>
-      #8c8fa1
+      #8C8FA1
       <br>
-      #7c7f93
+      #7C7F93
     </td>
   </tr>
   <tr>
@@ -81,14 +81,14 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>Body Copy</td>
     <td>Text</td>
     <td>
-      #4c4f69
+      #4C4F69
     </td>
   </tr>
   <tr>
     <td>Main Headline</td>
     <td>Text</td>
     <td>
-      #4c4f69
+      #4C4F69
     </td>
   </tr>
   <tr>
@@ -99,9 +99,9 @@ This file provides a comprehensive overview of the colour palette used in the Co
       <span style="color: red;">Subtext 2</span>
     </td>
     <td>
-      #6c6f85
+      #6C6F85
       <br>
-      #5c5f77
+      #5C5F77
       <br>
       #54576D
     </td>
@@ -110,49 +110,49 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>Subtle</td>
     <td>Overlay 1</td>
     <td>
-      #8c8fa1
+      #8C8FA1
     </td>
   </tr>
   <tr>
     <td>Links, URLs</td>
     <td>Blue</td>
     <td>
-      #1e66f5
+      #1E66F5
     </td>
   </tr>
   <tr>
     <td>Success</td>
     <td>Green</td>
     <td>
-      #40a02b
+      #40A02B
     </td>
   </tr>
   <tr>
     <td>Warnings</td>
     <td>Yellow</td>
     <td>
-      #df8e1d
+      #DF8E1D
     </td>
   </tr>
   <tr>
     <td>Errors</td>
     <td>Red</td>
     <td>
-      #d20f39
+      #D20F39
     </td>
   </tr>
   <tr>
     <td>Tags, Pills</td>
     <td>Blue</td>
     <td>
-      #1e66f5
+      #1E66F5
     </td>
   </tr>
   <tr>
     <td><span style="color: red;">Inverted Button Text</span></td>
     <td>White</td>
     <td>
-      #f2f6f7
+      #F2F6F7
     </td>
   </tr>
   <tr>
@@ -162,14 +162,14 @@ This file provides a comprehensive overview of the colour palette used in the Co
       <strong>20% - 30% Opacity</strong>
     </td>
     <td>
-      #7c7f93
+      #7C7F93
     </td>
   </tr>
   <tr>
     <td>Cursor</td>
     <td>Rosewater</td>
     <td>
-      #dc8a78
+      #DC8A78
     </td>
   </tr>
 </table>
@@ -199,7 +199,7 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>
       #232634
       <br>
-      #292c3c
+      #292C3C
     </td>
   </tr>
   <tr>
@@ -227,9 +227,9 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>
       #737994
       <br>
-      #838ba7
+      #838BA7
       <br>
-      #949cbb
+      #949CBB
     </td>
   </tr>
   <tr>
@@ -243,14 +243,14 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>Body Copy</td>
     <td>Text</td>
     <td>
-      #c6d0f5
+      #C6D0F5
     </td>
   </tr>
   <tr>
     <td>Main Headline</td>
     <td>Text</td>
     <td>
-      #c6d0f5
+      #C6D0F5
     </td>
   </tr>
   <tr>
@@ -260,16 +260,16 @@ This file provides a comprehensive overview of the colour palette used in the Co
       Subtext 1
     </td>
     <td>
-      #a5adce
+      #A5ADCE
       <br>
-      #b5bfe2
+      #B5BFE2
     </td>
   </tr>
   <tr>
     <td>Subtle</td>
     <td>Overlay 1</td>
     <td>
-      #838ba7
+      #838BA7
     </td>
   </tr>
   <tr>
@@ -329,14 +329,14 @@ This file provides a comprehensive overview of the colour palette used in the Co
       <strong>20% - 30% Opacity</strong>
     </td>
     <td>
-      #949cbb
+      #949CBB
     </td>
   </tr>
   <tr>
     <td>Cursor</td>
     <td>Rosewater</td>
     <td>
-      #f2d5cf
+      #F2D5CF
     </td>
   </tr>
 </table>
@@ -354,7 +354,7 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>Background Pane</td>
     <td>Base</td>
     <td>
-      #24273a
+      #24273A
     </td>
   </tr>
   <tr>
@@ -366,7 +366,7 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>
       #181926
       <br>
-      #1e2030
+      #1E2028
     </td>
   </tr>
   <tr>
@@ -377,11 +377,11 @@ This file provides a comprehensive overview of the colour palette used in the Co
       Surface 2
     </td>
     <td>
-      #363a4f
+      #363A4F
       <br>
-      #494d64
+      #494D64
       <br>
-      #5b6078
+      #5B6078
     </td>
   </tr>
   <tr>
@@ -392,11 +392,11 @@ This file provides a comprehensive overview of the colour palette used in the Co
       Overlay 2
     </td>
     <td>
-      #6e738d
+      #6E738D
       <br>
-      #8087a2
+      #8087A2
       <br>
-      #939ab7
+      #939AB7
     </td>
   </tr>
   <tr>
@@ -410,14 +410,14 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>Body Copy</td>
     <td>Text</td>
     <td>
-      #cad3f5
+      #CAD3F5
     </td>
   </tr>
   <tr>
     <td>Main Headline</td>
     <td>Text</td>
     <td>
-      #cad3f5
+      #CAD3F5
     </td>
   </tr>
   <tr>
@@ -427,51 +427,51 @@ This file provides a comprehensive overview of the colour palette used in the Co
       Subtext 1
     </td>
     <td>
-      #a5adcb
+      #A5ADCB
       <br>
-      #b8c0e0
+      #B8C0E0
     </td>
   </tr>
   <tr>
     <td>Subtle</td>
     <td>Overlay 1</td>
     <td>
-      #8087a2
+      #8087A2
     </td>
   </tr>
   <tr>
     <td>Links, URLs</td>
     <td>Blue</td>
     <td>
-      #8aadf4
+      #8AADF4
     </td>
   </tr>
   <tr>
     <td>Success</td>
     <td>Green</td>
     <td>
-      #a6da95
+      #A6DA95
     </td>
   </tr>
   <tr>
     <td>Warnings</td>
     <td>Yellow</td>
     <td>
-      #eed49f
+      #EED49F
     </td>
   </tr>
   <tr>
     <td>Errors</td>
     <td>Red</td>
     <td>
-      #ed8796
+      #ED8796
     </td>
   </tr>
   <tr>
     <td>Tags, Pills</td>
     <td>Blue</td>
     <td>
-      #8aadf4
+      #8AADF4
     </td>
   </tr>
   <tr>
@@ -488,14 +488,14 @@ This file provides a comprehensive overview of the colour palette used in the Co
       <strong>20% - 30% Opacity</strong>
     </td>
     <td>
-      #939ab7
+      #939AB7
     </td>
   </tr>
   <tr>
     <td>Cursor</td>
     <td>Rosewater</td>
     <td>
-      #f4dbd6
+      #F4DBD6
     </td>
   </tr>
 </table>
@@ -513,7 +513,7 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>Background Pane</td>
     <td>Base</td>
     <td>
-      #1e1e2e
+      #1E1E2E
     </td>
   </tr>
   <tr>
@@ -523,7 +523,7 @@ This file provides a comprehensive overview of the colour palette used in the Co
       Mantle
     </td>
     <td>
-      #11111b
+      #11111B
       <br>
       #181825
     </td>
@@ -538,9 +538,9 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>
       #313244
       <br>
-      #45475a
+      #45475A
       <br>
-      #585b70
+      #585B70
     </td>
   </tr>
   <tr>
@@ -551,11 +551,11 @@ This file provides a comprehensive overview of the colour palette used in the Co
       Overlay 2
     </td>
     <td>
-      #6c7086
+      #6C7086
       <br>
-      #7f849c
+      #7F849C
       <br>
-      #9399b2
+      #9399B2
     </td>
   </tr>
   <tr>
@@ -569,14 +569,14 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>Body Copy</td>
     <td>Text</td>
     <td>
-      #cdd6f4
+      #CDD6F4
     </td>
   </tr>
   <tr>
     <td>Main Headline</td>
     <td>Text</td>
     <td>
-      #cdd6f4
+      #CDD6F4
     </td>
   </tr>
   <tr>
@@ -586,51 +586,51 @@ This file provides a comprehensive overview of the colour palette used in the Co
       Subtext 1
     </td>
     <td>
-      #a6adc8
+      #A6ADC8
       <br>
-      #bac2de
+      #BAC2DE
     </td>
   </tr>
   <tr>
     <td>Subtle</td>
     <td>Overlay 1</td>
     <td>
-      #7f849c
+      #7F849C
     </td>
   </tr>
   <tr>
     <td>Links, URLs</td>
     <td>Blue</td>
     <td>
-      #89b4fa
+      #89B4FA
     </td>
   </tr>
   <tr>
     <td>Success</td>
     <td>Green</td>
     <td>
-      #a6e3a1
+      #A6E3A1
     </td>
   </tr>
   <tr>
     <td>Warnings</td>
     <td>Yellow</td>
     <td>
-      #f9e2af
+      #F9E2AF
     </td>
   </tr>
   <tr>
     <td>Errors</td>
     <td>Red</td>
     <td>
-      #f38ba8
+      #F38BA8
     </td>
   </tr>
   <tr>
     <td>Tags, Pills</td>
     <td>Blue</td>
     <td>
-      #89b4fa
+      #89B4FA
     </td>
   </tr>
   <tr>
@@ -647,14 +647,14 @@ This file provides a comprehensive overview of the colour palette used in the Co
       <strong>20% - 30% Opacity</strong>
     </td>
     <td>
-      #9399b2
+      #9399B2
     </td>
   </tr>
   <tr>
     <td>Cursor</td>
     <td>Rosewater</td>
     <td>
-      #f5e0dc
+      #F5E0DC
     </td>
   </tr>
 </table>

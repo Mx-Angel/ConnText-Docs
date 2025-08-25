@@ -55,7 +55,7 @@ Variants:
 Direction: Upwards
 
 Colour:
- - Background: #24273a
+ - Background: #24273A
  - Fill: #181926
 
 Shape:
@@ -63,6 +63,7 @@ Shape:
 
 Size: 1920x1080  
 Export: SVG
+
 ---
 
 ### Mocha
@@ -74,8 +75,8 @@ Variants:
 Direction: Upwards
 
 Colour:
- - Background: #1e1e2e
- - Fill: #11111b
+ - Background: #1E1E2E
+ - Fill: #11111B
 
 Shape:
  - Any settings (You don't need to get it perfect)
