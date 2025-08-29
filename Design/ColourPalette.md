@@ -366,7 +366,7 @@ This file provides a comprehensive overview of the colour palette used in the Co
     <td>
       #181926
       <br>
-      #1E2028
+      #1E2030
     </td>
   </tr>
   <tr>
