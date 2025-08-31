@@ -22,7 +22,7 @@ The documentation was created in a specific order to help developers and users u
 7. [Roadmap](Planning/RoadMap.md)
 8. [Tech Stack](Planning/TechStack.md)
 
-> Note that a text version of the Feature Tree diagram is available in [Planning/FeatureTreeText](Planning/FeatureTreeText.txt).
+> Note that a text version of the Feature Tree diagram is available at [Planning/FeatureTreeText](Planning/FeatureTreeText.txt).
 
 # Design
 1. Architecture
