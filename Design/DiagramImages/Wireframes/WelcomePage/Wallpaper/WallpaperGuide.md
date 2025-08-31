@@ -10,10 +10,10 @@ This document provides information about the wallpapers used as part of the init
 Template: Layered Wave    
 
 Colour:
- - Background: #DCE0E8
+ - Background: #E6E9EF
  - Wave Colour: 
-    1. #CCD0DA
-    2. #7C7F93
+    1. #7C7F93
+    2. #CCD0DA
 
 Direction: Upwards
 
@@ -32,10 +32,10 @@ Export: SVG
 Template: Layered Wave   
 
 Colour:
- - Background: #232634
+ - Background: #292C3C
  - Wave Colour: 
-    1. #414559
-    2. #949cbb
+    1. #949cbb
+    2. #414559
 
 Direction: Upwards
 
@@ -47,16 +47,17 @@ Shape:
 
 Canvas Size: 1920x1080  
 Export: SVG
+
 ---
 
 ### Macchiato
 Template: Layered Wave   
 
 Colour:
- - Background: #181926
- - Wave Colour: 
-    1. #363a4f
-    2. #939ab7
+ - Background: #1E2030
+ - Wave Colour:  
+    1. #939ab7
+    2. #363a4f
 
 Direction: Upwards
 
@@ -68,16 +69,17 @@ Shape:
 
 Canvas Size: 1920x1080  
 Export: SVG
+
 ---
 
 ### Mocha
 Template: Layered Wave  
 
 Colour:
- - Background: #11111b
+ - Background: #181825
  - Wave Colour: 
-    1. #313244
-    2. #9399b2
+    1. #9399b2
+    2. #313244
 
 Direction: Upwards
 
