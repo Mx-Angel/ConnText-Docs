@@ -15,7 +15,7 @@ Variants:
 Direction: Upwards  
 
 Colour:
- - Background: #DCE0E8
+ - Background: #E6E9EF
  - Fill: #CCD0DA
 
 Shape:
@@ -35,8 +35,8 @@ Variants:
 Direction: Upwards
 
 Colour:
- - Background: #303446
- - Fill: #232634
+ - Background: #292C3C
+ - Fill: #414559
 
 Shape:
  - Any settings (You don't need to get it perfect)
@@ -55,8 +55,8 @@ Variants:
 Direction: Upwards
 
 Colour:
- - Background: #24273A
- - Fill: #181926
+ - Background: #1E2030
+ - Fill: #363A4F
 
 Shape:
  - Any settings (You don't need to get it perfect)
@@ -75,8 +75,8 @@ Variants:
 Direction: Upwards
 
 Colour:
- - Background: #1E1E2E
- - Fill: #11111B
+ - Background: #181825
+ - Fill: #313244
 
 Shape:
  - Any settings (You don't need to get it perfect)
