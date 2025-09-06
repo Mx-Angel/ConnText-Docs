@@ -12,6 +12,9 @@ The documentation was created in a specific order to help developers and users u
 - [Docker](https://www.docker.com/)
 - [PenPot](https://penpot.app/)
 
+# Extra Tools
+- [Wallpaper Generator](https://app.haikei.app/)
+
 # Planning
 1. [Raw Ideas](Planning/RawIdeas.md)
 2. [User Stories](Planning/UserStories.md)
