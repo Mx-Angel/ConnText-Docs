@@ -13,14 +13,14 @@
     - Authentication
         - Login
         - Logout
-        - Two-Factor Authentication
+        - Multi-Factor Authentication
     - Presence & Identity
         - View Status
         - Modify Status
         - Block Users
         - Mute Users
         - Unblock Users
-        - Unmute Users
+        - Un-mute Users
         - Set Custom Status
 - Communication
     - Messaging
