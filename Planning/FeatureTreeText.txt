@@ -19,6 +19,8 @@
         - Modify Status
         - Block Users
         - Mute Users
+        - Add Friends
+        - Remove Friends
         - Unblock Users
         - Un-mute Users
         - Set Custom Status
