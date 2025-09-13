@@ -29,7 +29,7 @@ The documentation was created in a specific order to help developers and users u
 
 # Design
 1. Architecture
-    - [Architecture Overview](Design/Architecture/ArchitectureNotes.md)
+    - [Architecture Notes](Design/Architecture/ArchitectureNotes.md)
     - [Frontend Architecture Diagram](Design/Architecture/Images/FrontendArchitectureDiagram.png)
     - [Backend Architecture Diagram](Design/Architecture/Images/BackendArchitectureDiagram.png)
 2. Wireframes
@@ -38,6 +38,7 @@ The documentation was created in a specific order to help developers and users u
     - Welcome Page ([Latte](Design/Wireframes/Images/WelcomePage/WelcomeLatte.png)/[Frappé](Design/Wireframes/Images/WelcomePage/WelcomeFrappe.png)/[Macchiato](Design/Wireframes/Images/WelcomePage/WelcomeMacchiato.png)/[Mocha](Design/Wireframes/Images/WelcomePage/WelcomeMocha.png))
     - Initialise Server Page ([Latte](Design/Wireframes/Images/InitialiseServerPage/InitServerLatte.png)/[Frappé](Design/Wireframes/Images/InitialiseServerPage/InitServerFrappe.png)/[Macchiato](Design/Wireframes/Images/InitialiseServerPage/InitServerMacchiato.png)/[Mocha](Design/Wireframes/Images/InitialiseServerPage/InitServerMocha.png))
     - Join Server Page ([Latte](Design/Wireframes/Images/JoinServerPage/JoinServerLatte.png)/[Frappé](Design/Wireframes/Images/JoinServerPage/JoinServerFrappe.png)/[Macchiato](Design/Wireframes/Images/JoinServerPage/JoinServerMacchiato.png)/[Mocha](Design/Wireframes/Images/JoinServerPage/JoinServerMocha.png))
+    - Default Home Page ([Latte](Design/Wireframes/Images/DefaultHomePage/DefaultHomeLatte.png)/[Frappé](Design/Wireframes/Images/DefaultHomePage/DefaultHomeFrappe.png)/[Macchiato](Design/Wireframes/Images/DefaultHomePage/DefaultHomeMacchiato.png)/[Mocha](Design/Wireframes/Images/DefaultHomePage/DefaultHomeMocha.png))
     - Default Server Rules Page ([Latte](Design/Wireframes/Images/DefaultServerRulesPage/DefaultServerRulesLatte.png)/[Frappé](Design/Wireframes/Images/DefaultServerRulesPage/DefaultServerRulesFrappe.png)/[Macchiato](Design/Wireframes/Images/DefaultServerRulesPage/DefaultServerRulesMacchiato.png)/[Mocha](Design/Wireframes/Images/DefaultServerRulesPage/DefaultServerRulesMocha.png))
     - Default Server Chat Page ([Latte](Design/Wireframes/Images/DefaultServerChatPage/DefaultServerChatLatte.png)/[Frappé](Design/Wireframes/Images/DefaultServerChatPage/DefaultServerChatFrappe.png)/[Macchiato](Design/Wireframes/Images/DefaultServerChatPage/DefaultServerChatMacchiato.png)/[Mocha](Design/Wireframes/Images/DefaultServerChatPage/DefaultServerChatMocha.png))
     - Default Server Voice Chat Page ([Latte](Design/Wireframes/Images/DefaultServerVoiceChatPage/DefaultServerVoiceChatLatte.png)/[Frappé](Design/Wireframes/Images/DefaultServerVoiceChatPage/DefaultServerVoiceChatFrappe.png)/[Macchiato](Design/Wireframes/Images/DefaultServerVoiceChatPage/DefaultServerVoiceChatMacchiato.png)/[Mocha](Design/Wireframes/Images/DefaultServerVoiceChatPage/DefaultServerVoiceChatMocha.png))
