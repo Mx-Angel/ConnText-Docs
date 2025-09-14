@@ -15,7 +15,7 @@ This document will outline the non-functional requirements of the ConnText softw
 
 ### Security
 - **NFR-SEC-01**: All data in transit must be encrypted using industry-standard end-to-end encryption protocols (e.g., TLS 1.3 or higher).
-- **NFR-SEC-02**: All personal user data stored on disk must be encrypted at rest using AES-256 or a similar secure standard.
+- **NFR-SEC-02**: All personal user data stored local to the user and on disk must be encrypted at rest using AES-256 or a similar secure standard.
 - **NFR-SEC-03**: The system must support multi-factor authentication mechanisms for user accounts.
 - **NFR-SEC-04**: Server-side access to administrative functions must be protected through role-based access controls (RBAC).
 - **NFR-SEC-05**: Password storage must follow best practices, including salting and hashing using a strong algorithm like bcrypt or Argon2.
@@ -25,6 +25,7 @@ This document will outline the non-functional requirements of the ConnText softw
 - **NFR-SEC-09**: Logs must not contain sensitive information (e.g., passwords, full tokens) and must be protected from unauthorized access.
 - **NFR-SEC-10**: The software should respect user privacy when executing the backup feature, ensuring that user data is not included in backups unless explicitly opted-in by the user.
 - **NFR-SEC-11**: The system must support configurable authentication method enforcement at the server level, allowing admins to require specific verification methods.
+- **NFR-SEC-12**: The system must not expose user IP addresses in direct messages to other users.
 
 ### Privacy
 - **NFR-PRIV-01**: The software must allow server-level moderation (blocking, banning, etc.) without exposing user activity or private data to unauthorized parties.

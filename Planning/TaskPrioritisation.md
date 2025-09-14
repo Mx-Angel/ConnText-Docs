@@ -58,7 +58,7 @@ This project uses a Value vs Effort matrix to prioritize tasks. Each task is eva
 | Unblock Users                                        |   1    |   4   |    Q3    |
 | Unmute Users                                         |   1    |   3   |    Q3    |
 | Set Custom Status                                    |   2    |   1   |    Q1    |
-| Private Messaging                                    |   5    |   3   |    Q4    |
+| Private Messaging                                    |   5    |   4   |    Q4    |
 | Group Messaging                                      |   4    |   5   |    Q4    |
 | Message Reactions                                    |   5    |   3   |    Q4    |
 | Message Search                                       |   4    |   3   |    Q4    |
