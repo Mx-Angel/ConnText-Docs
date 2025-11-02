@@ -46,6 +46,9 @@ The documentation was created in a specific order to help developers and users u
     - Server Chat Page ([Latte](Design/Wireframes/Images/ServerChatPage/ServerChatLatte.png)/[Frappé](Design/Wireframes/Images/ServerChatPage/ServerChatFrappe.png)/[Macchiato](Design/Wireframes/Images/ServerChatPage/ServerChatMacchiato.png)/[Mocha](Design/Wireframes/Images/ServerChatPage/ServerChatMocha.png))
     - Server Voice Chat Page ([Latte](Design/Wireframes/Images/ServerVoiceChatPage/ServerVoiceChatLatte.png)/[Frappé](Design/Wireframes/Images/ServerVoiceChatPage/ServerVoiceChatFrappe.png)/[Macchiato](Design/Wireframes/Images/ServerVoiceChatPage/ServerVoiceChatMacchiato.png)/[Mocha](Design/Wireframes/Images/ServerVoiceChatPage/ServerVoiceChatMocha.png))
     - Settings Page ([Latte](Design/Wireframes/Images/SettingsPage/SettingsLatte.png)/[Frappé](Design/Wireframes/Images/SettingsPage/SettingsFrappe.png)/[Macchiato](Design/Wireframes/Images/SettingsPage/SettingsMacchiato.png)/[Mocha](Design/Wireframes/Images/SettingsPage/SettingsMocha.png))
+3. Prototypes
+    - [Prototype Link](Design/Prototypes/FullPrototype.penpot)
+    - ![Prototype Preview](Design/Prototypes/PrototypeDemo.gif)
 
 Note that the documentation isn't perfect, no documentation is, but if you find any mistakes or have suggestions for improvements, please feel free to open an issue, pull request or start a discussion.
 
