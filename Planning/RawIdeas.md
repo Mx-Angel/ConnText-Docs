@@ -1,6 +1,6 @@
 # Ideas for ConnText Software
 
-> This is an unfiltered idea dump used during early planning, unlikely to be updated after planning is complete even if new features are identified. It’s not meant to be exhaustive, correct, or refined—just a central list of brainstormed possibilities. It feeds into user stories, NFRs, and design planning later in the SDLC. For future reference, I have implemented the MoSCoW prioritization method, but this should not happen until after all the requirements have been gathered and the user stories have been created. 
+> This is an unfiltered idea dump used during early planning. It’s not meant to be exhaustive, correct, or refined—just a central list of brainstormed possibilities and will be open to changes when needed. It feeds into user stories, NFRs, and design planning later in the SDLC. For future reference, I have implemented the MoSCoW prioritization method, but this should not happen until after all the requirements have been gathered and the user stories have been created. 
 
 ## Overview
 This document is a collection of raw ideas for features and functionalities that could be included in the ConnText software. These ideas are intended to be refined and prioritized based on user needs and technical feasibility.
@@ -42,6 +42,8 @@ This document is a collection of raw ideas for features and functionalities that
 
 #### Miscellaneous Features
 - Must provide a way to search through messages
+- Must be able to host multiple servers on one set of hardware resources
+- Must provide end-to-end encryption for all communications
 
 ### Should-Have Features
 
@@ -52,11 +54,12 @@ This document is a collection of raw ideas for features and functionalities that
 
 #### Server Specific Features
 - Should provide a simple GUI for managing the backend server
+- Should provide a server library for storing files and searching through them
 
 #### Miscellaneous Features
 - Should support notifications for notable events
 - Should allow users to export their data
-- Should provide a server library for storing files and searching through them
+- Should provide localization support for multiple languages
 
 ### Could-Have Features
 

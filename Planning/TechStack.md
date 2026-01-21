@@ -10,7 +10,7 @@ The ConnText project is built using a combination of technologies, the ones used
 | Language          | C++                           | Native performance, flexibility               |
 | UI Framework      | Qt                            | Cross-platform desktop GUI toolkit            |
 | Realtime Media    | WebRTC                        | Peer-to-peer video, audio, data, screen share |
-| Audio/Video Codec | libwebrtc                     | Media encoding/decoding support via WebRTC    |
+| Media Processing  | FFmpeg                        | Media encoding/decoding support               |
 | Build System      | CMake                         | Widely used in C++ ecosystems                 |
 | Storage           | Local filesystem              | For cache, local media, temp user data        |
 | Authentication    | Passwords + tokens            | Validate user sessions if auth server is used |
@@ -19,16 +19,17 @@ The ConnText project is built using a combination of technologies, the ones used
 | Version Control   | Git + GitHub                  | Project source management                     |
 
 ## ConnText-Server
-| Layer / Area       | Technology / Tool             | Notes / Justification                        |
-| ------------------ | ----------------------------- | -------------------------------------------- |
-| Language           | Node.js / TypeScript          | Lightweight backend services, if needed      |
-| Web Server         | Fastify or Express.js         | REST API support for auth or file management |
-| Database           | PostgreSQL                    | Structured storage for accounts, metadata    |
-| File Storage       | Local FS                      | For uploads or shared media                  |
-| Auth / Security    | OAuth2 / Custom Login         | User authentication (if server-managed)      |
-| Realtime Messaging | HTTPS + WebSockets            | Server fallback for signaling or messaging   |
-| API Documentation  | OpenAPI / Swagger             | If public APIs are exposed                   |
-| DevOps             | GitHub Actions                | CI/CD, test automation                       |
-| Version Control    | Git + GitHub                  | Collaborative version control                |
+| Layer / Area       | Technology / Tool              | Notes / Justification                        |
+| ------------------ | ------------------------------ | -------------------------------------------- |
+| Language           | Node.js / TypeScript           | Lightweight backend services, if needed      |
+| Web Server         | Fastify or Express.js          | REST API support for auth or file management |
+| Database           | PostgreSQL / SQLite            | Structured storage for accounts, metadata    |
+| File Storage       | Local FS                       | For uploads or shared media                  |
+| Auth / Security    | OAuth2                         | User authentication                          |
+| Realtime Messaging | HTTPS + WebSockets             | Server fallback for signaling or messaging   |
+| Media Processing   | FFmpeg (fluent-ffmpeg) + Sharp | Media encoding/decoding/modification support |
+| API Documentation  | OpenAPI / Swagger              | If public APIs are exposed                   |
+| DevOps             | GitHub Actions                 | CI/CD, test automation                       |
+| Version Control    | Git + GitHub                   | Collaborative version control                |
 
 Note: These technologies are subject to change based on project needs, community feedback, and advancements in the tech stack.

@@ -1,7 +1,7 @@
 # Non-Functional Requirements Register
 
 ## Overview
-This document will outline the non-functional requirements of the ConnText software. The non-functional requirements go over requirements that aren't directly related to the functionality of the software, but rather how the software should perform or execute certain functionality. This document will use [UserStories](UserStories) as a reference for features and functionalities. Additionally, these non-functional requirements will be split by their types to make it easier to find the requirements you are looking for and to make future modifications easier.
+This document will outline the non-functional requirements of the ConnText software. The non-functional requirements describe aspects that aren't directly related to the functionality of the software from a user perspective, but rather how the software should perform or execute certain functionality in the background. This document will use [UserStories](UserStories) as a reference for features and functionalities. Additionally, these non-functional requirements will be split by their types to make it easier to find the requirements you are looking for and to make future modifications easier.
 
 ## Glossary
 - RBAC: Role-Based Access Control

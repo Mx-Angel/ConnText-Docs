@@ -100,6 +100,7 @@ This document outlines user stories for the ConnText software. Each user story c
 
 ### System Admin stories (Technical Operations)
 - As a system admin, I want a simple way to host my own ConnText instance so that I can deploy and manage the software infrastructure.
+- As a system admin, I want to be able to run multiple servers from a single set of hardware resources so that I can optimize resource usage and reduce costs.
 - As a system admin, I want to be able to run it as a Docker container so that I can easily deploy and manage the ConnText instance in a containerized environment.
 - As a system admin, I want a simple GUI for managing the backend system so that I can easily configure and maintain the server software.
 - As a system admin, I want an overview dashboard for system health so that I can monitor server performance, resource usage, and technical metrics.
