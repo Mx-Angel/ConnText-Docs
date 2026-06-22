@@ -1,6 +1,6 @@
 # Angel's Agile Software Development Methodology
 
-> Note: This will be followed best it can be, but as it is agile, flexibility is always an option and there may be parts left out or modified. This is not a rigid structure and can be changed to fit different use cases
+> Note: This will be followed best it can be, but as it is agile, flexibility is always an option and there may be parts left out or modified. This is not a rigid structure and can be changed to fit different use cases.
 
 ## Core processes:
 - Plan
