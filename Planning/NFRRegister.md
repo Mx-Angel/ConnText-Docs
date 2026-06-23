@@ -119,7 +119,7 @@ This document will outline the non-functional requirements of the ConnText softw
     - Hot start (resuming from background): < 1 second
 
 ### Compliance
-- **NFR-COMPL-01**: The ConnText software must comply with major international data protection laws, including GDPR, where applicable.
+- **NFR-COMPL-01**: The ConnText software must comply with major international data protection laws where applicable (e.g., GDPR, CCPA).
 - **NFR-COMPL-02**: The software must support user rights such as data access, deletion, and export, to comply with privacy regulations. (Note: **NFR-PRIV-02**)
 - **NFR-COMPL-03**: The software must maintain immutable audit logs of sensitive admin actions (e.g., user bans, permission changes) to support compliance audits.
 - **NFR-COMPL-04**: The software should allow for regional compliance modules (e.g., HIPAA, COPPA, or country-specific legal notices) to be enabled or disabled based on server location or industry.

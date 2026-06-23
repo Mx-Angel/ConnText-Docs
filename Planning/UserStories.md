@@ -54,7 +54,7 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a user, I want to be able to send files to other users so that I can share documents, images, and other resources.
 - As a user, I want to be able to send friend requests to other users so that I can connect with people I know or want to communicate with.
 - As a user, I want to be able to accept or decline friend requests so that I can manage my connections with other users.
-- As a user, I want to be able to manage my friends list so that I can organize and maintain my social connections on the platform.
+- As a user, I want to be able to remove contacts from my friends list so that I can organize and maintain my social connections on the platform.
 - As a user, I want to use ConnText on desktop, mobile, and web so that I can access it from any device.
 
 ### Platform & Accessibility stories

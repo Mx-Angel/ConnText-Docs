@@ -58,6 +58,9 @@ This project uses a Value vs Effort matrix to prioritize tasks. Each task is eva
 | Unblock Users                                        |   1    |   4   |    Q3    |
 | Unmute Users                                         |   1    |   3   |    Q3    |
 | Set Custom Status                                    |   2    |   1   |    Q1    |
+| Send Friend Requests                                 |   3    |   4   |    Q4    |
+| Accept/Decline Friend Requests                       |   2    |   4   |    Q3    |
+| Remove Friends                                       |   1    |   4   |    Q3    |
 | Private Messaging                                    |   5    |   4   |    Q4    |
 | Group Messaging                                      |   4    |   5   |    Q4    |
 | Message Reactions                                    |   5    |   3   |    Q4    |
@@ -69,8 +72,10 @@ This project uses a Value vs Effort matrix to prioritize tasks. Each task is eva
 | Screen Sharing                                       |   5    |   4   |    Q4    |
 | In-App Notifications                                 |   3    |   2   |    Q2    |
 | OS Notifications                                     |   4    |   2   |    Q2    |
+| Manage Notification Settings                         |   3    |   3   |    Q4    |
 | Join Server                                          |   3    |   5   |    Q4    |
 | Leave Server                                         |   3    |   5   |    Q4    |
+| Send Files                                           |   4    |   5   |    Q4    |
 | Delete Personal Data on Leave                        |   2    |   5   |    Q3    |
 | View Member Info                                     |   1    |   4   |    Q3    |
 | View Server Members                                  |   1    |   3   |    Q3    |
@@ -139,6 +144,9 @@ This project uses a Value vs Effort matrix to prioritize tasks. Each task is eva
 | Mobile Application                                   |   5    |   5   |    Q4    |
 | Web Application                                      |   5    |   5   |    Q4    |
 | Screen Reader Support                                |   5    |   4   |    Q4    |
-| Keyboard Navigation                                  |   5    |   5   |    Q4    |
+| Colour Blindness Support                             |   5    |   4   |    Q4    |
+| Customisable Font Sizes                              |   5    |   4   |    Q4    |
+| Responsive Design                                    |   2    |   5   |    Q3    |
+| Various Input Methods                                |   5    |   5   |    Q4    |
 | High Contrast Mode                                   |   5    |   4   |    Q4    |
 | Multi-Language Support                               |   5    |   5   |    Q4    |
