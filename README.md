@@ -32,10 +32,9 @@ The documentation was created in a specific order to help developers and users u
 > Note that a text version of the Feature Tree diagram is available at [Planning/FeatureTreeText](Planning/FeatureTreeText.txt).
 
 # Design
-1. Architecture
+1. Architecture (Reduced C4 Model)
     - [Architecture Notes](Design/Architecture/ArchitectureNotes.md)
-    - [Frontend Architecture Diagram](Design/Architecture/Images/FrontendArchitectureDiagram.png)
-    - [Backend Architecture Diagram](Design/Architecture/Images/BackendArchitectureDiagram.png)
+    - [System Context Diagram](Design/Architecture/Images/SystemContextDiagram.png)
 2. Wireframes
     - Login Page ([Latte](Design/Wireframes/Images/LoginPage/LoginLatte.png)/[Frappé](Design/Wireframes/Images/LoginPage/LoginFrappe.png)/[Macchiato](Design/Wireframes/Images/LoginPage/LoginMacchiato.png)/[Mocha](Design/Wireframes/Images/LoginPage/LoginMocha.png))
     - Sign Up Page ([Latte](Design/Wireframes/Images/SignUpPage/SignUpLatte.png)/[Frappé](Design/Wireframes/Images/SignUpPage/SignUpFrappe.png)/[Macchiato](Design/Wireframes/Images/SignUpPage/SignUpMacchiato.png)/[Mocha](Design/Wireframes/Images/SignUpPage/SignUpMocha.png))
