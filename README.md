@@ -32,7 +32,7 @@ The documentation was created in a specific order to help developers and users u
 > Note that a text version of the Feature Tree diagram is available at [Planning/FeatureTreeText](Planning/FeatureTreeText.txt).
 
 # Design
-1. Architecture (Reduced C4 Model)
+1. Architecture
     - [Architecture Notes](Design/Architecture/ArchitectureNotes.md)
     - [System Context Diagram](Design/Architecture/Images/SystemContextDiagram.png)
 2. Wireframes
