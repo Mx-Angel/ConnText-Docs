@@ -35,6 +35,7 @@ The documentation was created in a specific order to help developers and users u
 1. Architecture
     - [Architecture Notes](Design/Architecture/ArchitectureNotes.md)
     - [System Context Diagram](Design/Architecture/Images/SystemContextDiagram.png)
+    - [Container Diagram](Design/Architecture/Images/ContainerDiagram.png)
 2. Wireframes
     - Login Page ([Latte](Design/Wireframes/Images/LoginPage/LoginLatte.png)/[Frappé](Design/Wireframes/Images/LoginPage/LoginFrappe.png)/[Macchiato](Design/Wireframes/Images/LoginPage/LoginMacchiato.png)/[Mocha](Design/Wireframes/Images/LoginPage/LoginMocha.png))
     - Sign Up Page ([Latte](Design/Wireframes/Images/SignUpPage/SignUpLatte.png)/[Frappé](Design/Wireframes/Images/SignUpPage/SignUpFrappe.png)/[Macchiato](Design/Wireframes/Images/SignUpPage/SignUpMacchiato.png)/[Mocha](Design/Wireframes/Images/SignUpPage/SignUpMocha.png))
