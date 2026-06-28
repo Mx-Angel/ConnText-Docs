@@ -5,3 +5,6 @@ This is a supporting document that will provide details about the system archite
 
 ## Minimal Viable Architecture (MVA)
 We will create the diagrams in a way that represents the minimal viable architecture (MVA) of the system.
+
+## Admin Panel
+The Admin Panel is a web-based interface that allows administrators to manage and monitor the system. Work towards it will not start until the backend is at least at a minimal viable product (MVP) state.
