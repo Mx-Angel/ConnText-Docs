@@ -17,7 +17,7 @@ This document will outline the non-functional requirements of the ConnText softw
 
 ### Security
 - **NFR-SEC-01**: All data in transit must be encrypted using industry-standard protocols.
-    - **NFR-SEC-01a**: All private/direct messages must use end-to-end encryption so that only the sender and recipient can read the message content.
+    - **NFR-SEC-01a**: All messages (group, private, server) must use end-to-end encryption so that only the sender and recipient can read the message content.
     - **NFR-SEC-01b**: All other data in transit (server channels, API calls, media) must be encrypted using TLS 1.3 or higher to prevent interception.
 - **NFR-SEC-02**: All personal user data stored local to the user must be encrypted at rest using AES-256 or a similar secure standard.
 - **NFR-SEC-03**: The system must support multi-factor authentication mechanisms for user accounts.

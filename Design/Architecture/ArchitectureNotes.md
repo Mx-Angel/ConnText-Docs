@@ -8,3 +8,6 @@ We will create the diagrams in a way that represents the minimal viable architec
 
 ## Admin Panel
 The Admin Panel is a web-based interface that allows administrators to manage and monitor the system. Work towards it will not start until the backend is at least at a minimal viable product (MVP) state.
+
+## Conntext SDK
+The diagram for this will be a "sub-component" diagram, as the SDK has a lot of parts in of itself, but does not need a code diagram to represent it. The component diagram should give sufficent overview without being too detailed.
