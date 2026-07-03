@@ -58,9 +58,11 @@ The documentation was created in a specific order to help developers and users u
     - ![Prototype Preview](Design/Prototypes/PrototypeDemo.gif)
 4. Entity Relationship Diagrams (ERDs)
     - [Backend ERD](Design/Architecture/Images/BackendERDiagram.png)
+    - [SDK ERD](Design/Architecture/Images/SDKERDiagram.png)
 
 - Architecture Decision Records (ADRs)
     - [ADR-001: Home Server Identity Model](Design/ADRs/ADR-001.md)
+    - [ADR-002: E2E Encryption Model](Design/ADRs/ADR-002.md)
 
 Note that the documentation isn't perfect, no documentation is, but if you find any mistakes or have suggestions for improvements, please feel free to open an issue, pull request or start a discussion.
 

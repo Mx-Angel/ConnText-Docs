@@ -13,7 +13,8 @@ The ConnText project is built using a combination of technologies, the ones used
 | Media Processing   | FFmpeg                                         | Media encoding/decoding support               |
 | Storage            | SQLite                                         | For cache, local media, user data, etc.       |
 | Networking         | Boost.Beast                                    | For server communication                      |
-| Encryption         | OpenSSL                                        | For secure communication and data protection  |
+| Transport Security | OpenSSL                                        | For secure communication and data protection  |
+| E2E Encryption     | libsignal + Megolm                             | For secure end-to-end encryption              |
 | Language Bindings  | Python (nanobind), Swift (native), Kotlin (JNI)| Exposes SDK to other languages                |
 
 ## ConnText-Desktop
