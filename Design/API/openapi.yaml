@@ -1,0 +1,190 @@
+openapi: 3.2.0
+info:
+  title: ConnText API
+  description: API contracts for the ConnText communication platform
+  version: 0.1.0
+tags:
+  - name: Auth
+  - name: Notification (Internal)
+  - name: Audit (Internal)
+  - name: Messaging
+  - name: Media
+  - name: RTC
+  - name: Server Management
+  - name: System Management
+servers:
+  - url: http://localhost:3000/api/v1
+    description: Local development server
+paths:
+  /auth/register:
+    post:
+      tags: [Auth]
+  /auth/login:
+    post:
+      tags: [Auth]
+  /auth/token/refresh:
+    post:
+      tags: [Auth]
+  /auth/token/validate:
+    get:
+      tags: [Auth]
+  /auth/logout:
+    post:
+      tags: [Auth]
+  /notification/system:
+    post:
+      tags: [Notification (Internal)]
+  /notification/email:
+    post:
+      tags: [Notification (Internal)]
+  /audit/log:
+    post:
+      tags: [Audit (Internal)]
+  /messaging/{channelId}:
+    parameters:
+      - name: channelId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Messaging]
+    post:
+      tags: [Messaging]
+  /messaging/{channelId}/{messageId}:
+    parameters:
+      - name: channelId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: messageId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Messaging]
+    patch:
+      tags: [Messaging]
+    delete:
+      tags: [Messaging]
+  /media/{channelId}/{messageId}:
+    parameters:
+      - name: channelId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: messageId
+        in: path
+        required: true
+        schema:
+          type: string
+    post:
+      tags: [Media]
+    get:
+      tags: [Media]
+    delete:
+      tags: [Media]
+    patch:
+      tags: [Media]
+  /rtc/{channelId}/join:
+    parameters:
+      - name: channelId
+        in: path
+        required: true
+        schema:
+          type: string
+    post:
+      tags: [RTC]
+  /rtc/{channelId}/leave:
+    parameters:
+      - name: channelId
+        in: path
+        required: true
+        schema:
+          type: string
+    post:
+      tags: [RTC]
+  /rtc/{channelId}/status:
+    parameters:
+      - name: channelId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [RTC]
+  /server/users:
+    get:
+      tags: [Server Management]
+    post:
+      tags: [Server Management]
+  /server/users/{userId}:
+    parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Server Management]
+    put:
+      tags: [Server Management]
+    delete:
+      tags: [Server Management]
+  /server/channels:
+    get:
+      tags: [Server Management]
+    post:
+      tags: [Server Management]
+  /server/channels/{channelId}:
+    parameters:
+      - name: channelId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Server Management]
+    put:
+      tags: [Server Management]
+    delete:
+      tags: [Server Management]
+  /server/roles:
+    get:
+      tags: [Server Management]
+    post:
+      tags: [Server Management]
+  /server/roles/{roleId}:
+    parameters:
+      - name: roleId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Server Management]
+    put:
+      tags: [Server Management]
+    delete:
+      tags: [Server Management]
+  /server/permissions:
+    get:
+      tags: [Server Management]
+    post:
+      tags: [Server Management]
+  /server/permissions/{permissionId}:
+    parameters:
+      - name: permissionId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Server Management]
+    put:
+      tags: [Server Management]
+    delete:
+      tags: [Server Management]

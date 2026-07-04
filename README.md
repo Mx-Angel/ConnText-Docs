@@ -59,6 +59,8 @@ The documentation was created in a specific order to help developers and users u
 4. Entity Relationship Diagrams (ERDs)
     - [Backend ERD](Design/Architecture/Images/BackendERDiagram.png)
     - [SDK ERD](Design/Architecture/Images/SDKERDiagram.png)
+5. API Contracts
+    - [API Contracts](Design/API/openapi.yaml)
 
 - Architecture Decision Records (ADRs)
     - [ADR-001: Home Server Identity Model](Design/ADRs/ADR-001.md)
