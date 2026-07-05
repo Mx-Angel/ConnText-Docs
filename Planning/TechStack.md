@@ -7,15 +7,15 @@ The ConnText project is built using a combination of technologies, the ones used
 
 | Layer / Area       | Technology / Tool                              | Notes / Justification                         |
 | ------------------ | ---------------------------------------------- | --------------------------------------------- |
-| Language           | C++                                            | Native performance, flexibility               |
-| Build System       | CMake                                          | Widely used in C++ ecosystems                 |
+| Language           | Rust                                           | Native performance, flexibility, memory safety|
+| Build System       | Cargo                                          | Widely used in Rust ecosystems                |
 | Realtime Media     | WebRTC                                         | Peer-to-peer video, audio, data, screen share |
 | Media Processing   | FFmpeg                                         | Media encoding/decoding support               |
 | Storage            | SQLite                                         | For cache, local media, user data, etc.       |
-| Networking         | Boost.Beast                                    | For server communication                      |
-| Transport Security | OpenSSL                                        | For secure communication and data protection  |
-| E2E Encryption     | libsignal + Megolm                             | For secure end-to-end encryption              |
-| Language Bindings  | Python (nanobind), Swift (native), Kotlin (JNI)| Exposes SDK to other languages                |
+| Transport Security | rustls (via reqwest)                           | For secure communication                      |
+| Networking         | reqwest + tokio-tungstenite                    | For server communication                      |
+| E2E Encryption     | OpenMLS                                        | For secure end-to-end encryption              |
+| Language Bindings  | UniFFI (Kotlin, Swift, Python) + C FFI         | Exposes SDK to other languages                |
 
 ## ConnText-Desktop
 
