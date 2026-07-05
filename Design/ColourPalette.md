@@ -1,7 +1,7 @@
 # Colour Palette
 
 ## Overview
-This file provides a comprehensive overview of the colour palette used in the ConnText application. The colour palette used it based of off the Catppuccin colour scheme. All 4 main palette colours; Latte; Frappé; Macchiato; and Mocha. 
+This file provides a comprehensive overview of the colour palette used in the ConnText application. The colour palette used it based off of the Catppuccin colour scheme. All 4 main palette colours; Latte; Frappé; Macchiato; and Mocha. 
 
 > I was not able to follow the colour palette exactly as specified in the Catppuccin documentation due to conflicts with the WCAG guidelines, as a result I made some adjustments to ensure better accessibility. Where this colour palette differs from the original it will be noted using a <span style="color: red;">red</span> font. Examples: "Button Text" is a new entry; "Subtext 2" is an addition; etc. Any changes made in use, e.g. background colour for foreground elements will not be recorded as this creates a lot of extra documentation.
 

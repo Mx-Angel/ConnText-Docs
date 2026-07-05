@@ -6,10 +6,6 @@ This repository will have all the documentation related to [ConnText-Desktop](ht
 
 The documentation was created in a specific order to help developers and users understand the project, its features, and how to contribute. It is structured to provide a comprehensive overview of the project, including its architecture, design decisions, and implementation details. The documentation should be read in the following order:
 
-# AI Policy
-- AI use is strictly limited to reviewing documentation for gaps, inconsistencies and mistakes. AI must never be used to author changes or create content and any changes made with the assistance of AI will be the responsibility of the human author.
-    - "A computer can never be held accountable, therefore a computer must never make a management decision." - IBM Training Manual, 1979.
-
 # Development Tools
 - [Visual Studio Code](https://code.visualstudio.com/) (Feel free to use your IDE of choice)
 - [Draw.io](https://app.diagrams.net/)
@@ -67,5 +63,9 @@ The documentation was created in a specific order to help developers and users u
     - [ADR-002: E2E Encryption Model](Design/ADRs/ADR-002.md)
 
 Note that the documentation isn't perfect, no documentation is, but if you find any mistakes or have suggestions for improvements, please feel free to open an issue, pull request or start a discussion.
+
+# AI Policy
+- AI use is strictly limited to reviewing documentation for gaps, inconsistencies and mistakes. AI must never be used to author changes or create content and any changes made with the assistance of AI will be the responsibility of the human author.
+    - "A computer can never be held accountable, therefore a computer must never make a management decision." - IBM Training Manual, 1979.
 
 All documentation is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.

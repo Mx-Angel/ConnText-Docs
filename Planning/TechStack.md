@@ -9,7 +9,7 @@ The ConnText project is built using a combination of technologies, the ones used
 | ------------------ | ---------------------------------------------- | --------------------------------------------- |
 | Language           | Rust                                           | Native performance, flexibility, memory safety|
 | Build System       | Cargo                                          | Widely used in Rust ecosystems                |
-| Realtime Media     | WebRTC                                         | Peer-to-peer video, audio, data, screen share |
+| Realtime Media     | WebRTC                                         | SFU video, audio, data, screen share          |
 | Media Processing   | FFmpeg                                         | Media encoding/decoding support               |
 | Storage            | SQLite                                         | For cache, local media, user data, etc.       |
 | Transport Security | rustls (via reqwest)                           | For secure communication                      |
