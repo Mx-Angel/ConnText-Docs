@@ -60,7 +60,7 @@ The documentation was created in a specific order to help developers and users u
 
 - Architecture Decision Records (ADRs)
     - [ADR-001: Home Server Identity Model](Design/ADRs/ADR-001.md)
-    - [ADR-002: E2E Encryption Model (Superseeded by ADR-004)](Design/ADRs/ADR-002.md)
+    - [ADR-002: E2E Encryption Model (Superseded by ADR-004)](Design/ADRs/ADR-002.md)
     - [ADR-003: Rust as SDK Implementation Language](Design/ADRs/ADR-003.md)
     - [ADR-004: MLS via OpenMLS as Unified E2EE Protocol](Design/ADRs/ADR-004.md)
     - [ADR-005: Per-Channel E2EE with Opt-In at Creation](Design/ADRs/ADR-005.md)

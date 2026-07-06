@@ -1,7 +1,7 @@
 # Non-Functional Requirements Register
 
 ## Overview
-This document will outline the non-functional requirements of the ConnText software. The non-functional requirements describe aspects that aren't directly related to the functionality of the software from a user perspective, but rather how the software should perform or execute certain functionality in the background. This document will use [UserStories](UserStories) as a reference for features and functionalities. Additionally, these non-functional requirements will be split by their types to make it easier to find the requirements you are looking for and to make future modifications easier.
+This document will outline the non-functional requirements of the ConnText software. The non-functional requirements describe aspects that aren't directly related to the functionality of the software from a user perspective, but rather how the software should perform or execute certain functionality in the background. This document will use [UserStories](UserStories.md) as a reference for features and functionalities. Additionally, these non-functional requirements will be split by their types to make it easier to find the requirements you are looking for and to make future modifications easier.
 
 > No SLA defined as availability is dependent on the server host and not the software itself.
 
@@ -17,9 +17,9 @@ This document will outline the non-functional requirements of the ConnText softw
 
 ### Security
 - **NFR-SEC-01**: All data in transit must be encrypted using industry-standard protocols.
-    - **NFR-SEC-01a**: All messages (group, private, server) must use encryption.
+    - **NFR-SEC-01a**: All messages (group, private, server) must use either E2E encryption or transport encryption.
     - **NFR-SEC-01b**: All other data in transit (server channels, API calls, media) must be encrypted using TLS 1.3 or higher to prevent interception.
-    - **NFR-SEC-01c**: E2E encryption should be implemented at a per-channel level at creation, so that functionality isn't restricted for a whole server.
+    - **NFR-SEC-01c**: E2E encryption must be implemented at a per-channel level at creation, so that functionality isn't restricted for a whole server.
 - **NFR-SEC-02**: All personal user data stored local to the user must be encrypted at rest using AES-256 or a similar secure standard.
 - **NFR-SEC-03**: The system must support multi-factor authentication mechanisms for user accounts.
 - **NFR-SEC-04**: Server-side access to administrative functions must be protected through role-based access controls (RBAC).
@@ -41,6 +41,7 @@ This document will outline the non-functional requirements of the ConnText softw
 - **NFR-PRIV-06**: Users must be able to view and revoke active sessions/devices for their account.
 - **NFR-PRIV-07**: The system must support configurable data retention periods for all user-generated content.
 - **NFR-PRIV-08**: The system must offer the user the ability to enable or disable whether they want their data to be part of the server's backup feature. (Default: opt-out)
+- **NFR-PRIV-09**: The server must never receive, store, or transmit material sufficient to decrypt user key backups, including recovery passphrases or derived keys.
 
 ### Capacity
 - **NFR-CAP-01**: The system must support a minimum of 1,000 concurrent users per deployed server instance under expected operating conditions.
