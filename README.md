@@ -65,6 +65,7 @@ The documentation was created in a specific order to help developers and users u
     - [ADR-004: MLS via OpenMLS as Unified E2EE Protocol](Design/ADRs/ADR-004.md)
     - [ADR-005: Per-Channel E2EE with Opt-In at Creation](Design/ADRs/ADR-005.md)
     - [ADR-006: Encrypted Key Backup for Multi-Device Support](Design/ADRs/ADR-006.md)
+    - [ADR-007: SFU Relay with E2EE Support for Voice/Video](Design/ADRs/ADR-007.md)
 
 Note that the documentation isn't perfect, no documentation is, but if you find any mistakes or have suggestions for improvements, please feel free to open an issue, pull request or start a discussion.
 
