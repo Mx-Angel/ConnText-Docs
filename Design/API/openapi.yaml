@@ -3,10 +3,60 @@ info:
   title: ConnText API
   description: API contracts for the ConnText communication platform
   version: 0.1.0
+components:
+  securitySchemes:
+    bearerHttpAuthentication:
+      type: http
+      scheme: Bearer
+      bearerFormat: JWT
+  schemas:
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: string
+          description: Error identifier
+        message:
+          type: string
+          description: Human-readable error explanation
+        details:
+          type: string
+          description: Stack trace for debugging
+  responses:
+    Unauthorised:
+      description: Request not authorised
+      content:
+        application/json: 
+          schema:
+            $ref: '#/components/schemas/Error'
+    Forbidden:
+      description: Request does not have required permissions
+      content:
+        application/json: 
+          schema: 
+            $ref: '#/components/schemas/Error'
+    NotFound:
+      description: Requested resource does not exist
+      content:
+        application/json: 
+          schema: 
+            $ref: '#/components/schemas/Error'
+    BadRequest:
+      description: Request body is invalid or missing required fields
+      content:
+        application/json: 
+          schema: 
+            $ref: '#/components/schemas/Error'
+          
+security: 
+  - bearerHttpAuthentication: []
 tags:
-  - name: Auth
   - name: Notification (Internal)
   - name: Audit (Internal)
+  - name: Auth
   - name: Messaging
   - name: Media
   - name: RTC
@@ -16,30 +66,72 @@ servers:
   - url: http://localhost:3000/api/v1
     description: Local development server
 paths:
-  /auth/register:
-    post:
-      tags: [Auth]
-  /auth/login:
-    post:
-      tags: [Auth]
-  /auth/token/refresh:
-    post:
-      tags: [Auth]
-  /auth/token/validate:
-    get:
-      tags: [Auth]
-  /auth/logout:
-    post:
-      tags: [Auth]
   /notification/system:
     post:
       tags: [Notification (Internal)]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
   /notification/email:
     post:
       tags: [Notification (Internal)]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
   /audit/log:
     post:
       tags: [Audit (Internal)]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  /auth/register:
+    post:
+      tags: [Auth]
+      security: []
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+  /auth/login:
+    post:
+      tags: [Auth]
+      security: []
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+  /auth/token/refresh:
+    post:
+      tags: [Auth]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+  /auth/token/validate:
+    get:
+      tags: [Auth]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+  /auth/logout:
+    post:
+      tags: [Auth]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
   /messaging/{channelId}:
     parameters:
       - name: channelId
@@ -49,8 +141,20 @@ paths:
           type: string
     get:
       tags: [Messaging]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
     post:
       tags: [Messaging]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
   /messaging/{channelId}/{messageId}:
     parameters:
       - name: channelId
@@ -65,10 +169,31 @@ paths:
           type: string
     get:
       tags: [Messaging]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
     patch:
       tags: [Messaging]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
     delete:
       tags: [Messaging]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
   /media/{channelId}/{messageId}:
     parameters:
       - name: channelId
@@ -83,12 +208,40 @@ paths:
           type: string
     post:
       tags: [Media]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
     get:
       tags: [Media]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
     delete:
       tags: [Media]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
     patch:
       tags: [Media]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
   /rtc/{channelId}/join:
     parameters:
       - name: channelId
@@ -98,6 +251,11 @@ paths:
           type: string
     post:
       tags: [RTC]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
   /rtc/{channelId}/leave:
     parameters:
       - name: channelId
@@ -107,6 +265,11 @@ paths:
           type: string
     post:
       tags: [RTC]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
   /rtc/{channelId}/status:
     parameters:
       - name: channelId
@@ -116,11 +279,28 @@ paths:
           type: string
     get:
       tags: [RTC]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
   /server/users:
     get:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
     post:
       tags: [Server Management]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
   /server/users/{userId}:
     parameters:
       - name: userId
@@ -130,15 +310,48 @@ paths:
           type: string
     get:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
     put:
       tags: [Server Management]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
     delete:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
   /server/channels:
     get:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
     post:
       tags: [Server Management]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
   /server/channels/{channelId}:
     parameters:
       - name: channelId
@@ -148,15 +361,48 @@ paths:
           type: string
     get:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '404':
+          $ref: '#/components/responses/NotFound'
     put:
       tags: [Server Management]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
     delete:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
   /server/roles:
     get:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
     post:
       tags: [Server Management]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
   /server/roles/{roleId}:
     parameters:
       - name: roleId
@@ -166,15 +412,50 @@ paths:
           type: string
     get:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
     put:
       tags: [Server Management]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
     delete:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
   /server/permissions:
     get:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
     post:
       tags: [Server Management]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
   /server/permissions/{permissionId}:
     parameters:
       - name: permissionId
@@ -184,7 +465,30 @@ paths:
           type: string
     get:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
     put:
       tags: [Server Management]
+      responses:
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
     delete:
       tags: [Server Management]
+      responses:
+        '401':
+          $ref: '#/components/responses/Unauthorised'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
