@@ -25,33 +25,533 @@ components:
         details:
           type: string
           description: Stack trace for debugging
+    RegisterRequest:
+      type: object
+      required:
+        - username
+        - email
+        - password
+      properties:
+        username:
+          type: string
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          format: password
+    LoginRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          format: password
+    TokenPair:
+      type: object
+      properties:
+        access_token:
+          type: string
+        access_token_expires_at:
+          type: string
+          format: date-time
+        refresh_token:
+          type: string
+        refresh_token_expires_at:
+          type: string
+          format: date-time
+    RefreshTokenRequest:
+      type: object
+      required:
+        - refresh_token
+      properties:
+        refresh_token:
+          type: string
+    TokenValidationResponse:
+      type: object
+      properties:
+        valid:
+          type: boolean
+        user_id:
+          type: string
+    KeyBackupUpload:
+      type: object
+      required:
+        - encrypted_content
+      properties:
+        encrypted_content:
+          type: string
+          description: Base64-encoded encrypted key material
+    KeyBackupResponse:
+      type: object
+      properties:
+        backup_id:
+          type: string
+        user_id:
+          type: string
+        encrypted_content:
+          type: string
+        updated_at:
+          type: string
+          format: date-time
+    User:
+      type: object
+      properties:
+        user_id:
+          type: string
+        username:
+          type: string
+        profile_picture:
+          type: string
+        user_status:
+          type: string
+        profile_desc:
+          type: string
+        last_active:
+          type: string
+          format: date-time
+    UserProfile:
+      type: object
+      description: Full profile returned to the account owner
+      properties:
+        user_id:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+          format: email
+        profile_picture:
+          type: string
+        user_status:
+          type: string
+        profile_desc:
+          type: string
+        two_factor_auth:
+          type: boolean
+        last_active:
+          type: string
+          format: date-time
+        created_at:
+          type: string
+          format: date-time
+    AuthResponse:
+      type: object
+      properties:
+        user:
+          $ref: '#/components/schemas/UserProfile'
+        tokens:
+          $ref: '#/components/schemas/TokenPair'
+    ServerDetails:
+      type: object
+      properties:
+        server_id:
+          type: string
+        server_name:
+          type: string
+        server_picture:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        server_desc:
+          type: string
+        owned_by:
+          type: string
+    ServerMember:
+      type: object
+      properties:
+        member_id:
+          type: string
+        user_id:
+          type: string
+        username:
+          type: string
+        server_user_nickname:
+          type: string
+        server_user_profile_picture:
+          type: string
+        joined_at:
+          type: string
+          format: date-time
+        ban_status:
+          type: boolean
+        ban_reason:
+          type: string
+    UpdateMemberRequest:
+      type: object
+      properties:
+        server_user_nickname:
+          type: string
+        server_user_profile_picture:
+          type: string
+        ban_status:
+          type: boolean
+        ban_reason:
+          type: string
+    Channel:
+      type: object
+      properties:
+        channel_id:
+          type: string
+        channel_name:
+          type: string
+        channel_type:
+          type: string
+          enum: [text, voice, dm]
+        created_at:
+          type: string
+          format: date-time
+        channel_desc:
+          type: string
+        created_by:
+          type: string
+        encryption_mode:
+          type: string
+          enum: [e2ee, standard]
+    CreateChannelRequest:
+      type: object
+      required:
+        - channel_name
+        - channel_type
+        - encryption_mode
+      properties:
+        channel_name:
+          type: string
+        channel_type:
+          type: string
+          enum: [text, voice, dm]
+        channel_desc:
+          type: string
+        encryption_mode:
+          type: string
+          enum: [e2ee, standard]
+          description: Immutable once set at creation
+    UpdateChannelRequest:
+      type: object
+      properties:
+        channel_name:
+          type: string
+        channel_desc:
+          type: string
+    Message:
+      type: object
+      properties:
+        message_id:
+          type: string
+        member_id:
+          type: string
+        channel_id:
+          type: string
+        content:
+          type: string
+          description: Plaintext for standard channels, ciphertext for E2EE channels
+        created_at:
+          type: string
+          format: date-time
+        last_edited_at:
+          type: string
+          format: date-time
+        edit_count:
+          type: integer
+        reactions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Reaction'
+    CreateMessageRequest:
+      type: object
+      required:
+        - content
+      properties:
+        content:
+          type: string
+        media_ids:
+          type: array
+          items:
+            type: string
+          description: IDs of previously uploaded media to attach
+    UpdateMessageRequest:
+      type: object
+      required:
+        - content
+      properties:
+        content:
+          type: string
+    PaginatedMessages:
+      type: object
+      properties:
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Message'
+        next_cursor:
+          type: string
+          description: Pass as cursor query param to fetch the next page, null if no more
+        has_more:
+          type: boolean
+    Media:
+      type: object
+      properties:
+        media_id:
+          type: string
+        message_id:
+          type: string
+        uploaded_by:
+          type: string
+        file_location:
+          type: string
+        file_type:
+          type: string
+        file_size:
+          type: integer
+        uploaded_at:
+          type: string
+          format: date-time
+    UpdateMediaRequest:
+      type: object
+      properties:
+        file_type:
+          type: string
+    Reaction:
+      type: object
+      properties:
+        reaction_id:
+          type: string
+        message_id:
+          type: string
+        member_id:
+          type: string
+        content:
+          type: string
+          description: Emoji character
+    Role:
+      type: object
+      properties:
+        role_id:
+          type: string
+        role_name:
+          type: string
+        colour:
+          type: string
+        role_desc:
+          type: string
+        permissions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Permission'
+    CreateRoleRequest:
+      type: object
+      required:
+        - role_name
+      properties:
+        role_name:
+          type: string
+        colour:
+          type: string
+        role_desc:
+          type: string
+        permission_ids:
+          type: array
+          items:
+            type: string
+    UpdateRoleRequest:
+      type: object
+      properties:
+        role_name:
+          type: string
+        colour:
+          type: string
+        role_desc:
+          type: string
+        permission_ids:
+          type: array
+          items:
+            type: string
+    Permission:
+      type: object
+      properties:
+        permission_id:
+          type: string
+        permission_name:
+          type: string
+        permission_desc:
+          type: string
+    CreatePermissionRequest:
+      type: object
+      required:
+        - permission_name
+      properties:
+        permission_name:
+          type: string
+        permission_desc:
+          type: string
+    UpdatePermissionRequest:
+      type: object
+      properties:
+        permission_name:
+          type: string
+        permission_desc:
+          type: string
+    CallStatus:
+      type: object
+      properties:
+        channel_id:
+          type: string
+        active:
+          type: boolean
+        started_at:
+          type: string
+          format: date-time
+        participant_count:
+          type: integer
+    JoinCallResponse:
+      type: object
+      properties:
+        channel_id:
+          type: string
+        sfu_endpoint:
+          type: string
+          description: WebSocket URL for SFU signalling
+    FriendRequest:
+      type: object
+      properties:
+        request_id:
+          type: string
+        requester_id:
+          type: string
+        requester_username:
+          type: string
+        recipient_id:
+          type: string
+        recipient_username:
+          type: string
+        status:
+          type: string
+          enum: [pending, accepted, declined]
+        created_at:
+          type: string
+          format: date-time
+    SendFriendRequest:
+      type: object
+      required:
+        - recipient_id
+      properties:
+        recipient_id:
+          type: string
+    UpdateFriendRequest:
+      type: object
+      required:
+        - status
+      properties:
+        status:
+          type: string
+          enum: [accepted, declined]
+    Friend:
+      type: object
+      properties:
+        user_id:
+          type: string
+        username:
+          type: string
+        profile_picture:
+          type: string
+        user_status:
+          type: string
+    Block:
+      type: object
+      properties:
+        block_id:
+          type: string
+        blocked_id:
+          type: string
+        blocked_username:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+    SystemNotificationRequest:
+      type: object
+      required:
+        - recipient_id
+        - title
+        - body
+      properties:
+        recipient_id:
+          type: string
+        title:
+          type: string
+        body:
+          type: string
+    EmailNotificationRequest:
+      type: object
+      required:
+        - recipient_email
+        - subject
+        - body
+      properties:
+        recipient_email:
+          type: string
+          format: email
+        subject:
+          type: string
+        body:
+          type: string
+    AuditLogRequest:
+      type: object
+      required:
+        - service_name
+        - event_type
+        - severity
+        - log_message
+      properties:
+        actor_id:
+          type: string
+        service_name:
+          type: string
+          enum: [Auth, Messaging, Media, RTC, ServerManagement, Social, SystemManagement, Notification]
+        event_type:
+          type: string
+        severity:
+          type: string
+          enum: [INFO, WARNING, ERROR, CRITICAL]
+        log_message:
+          type: string
+    SuccessResponse:
+      type: object
+      properties:
+        message:
+          type: string
   responses:
     Unauthorised:
       description: Request not authorised
       content:
-        application/json: 
+        application/json:
           schema:
             $ref: '#/components/schemas/Error'
     Forbidden:
       description: Request does not have required permissions
       content:
-        application/json: 
-          schema: 
+        application/json:
+          schema:
             $ref: '#/components/schemas/Error'
     NotFound:
       description: Requested resource does not exist
       content:
-        application/json: 
-          schema: 
+        application/json:
+          schema:
             $ref: '#/components/schemas/Error'
     BadRequest:
       description: Request body is invalid or missing required fields
       content:
-        application/json: 
-          schema: 
+        application/json:
+          schema:
             $ref: '#/components/schemas/Error'
-          
-security: 
+security:
   - bearerHttpAuthentication: []
 tags:
   - name: Notification (Internal)
@@ -67,11 +567,23 @@ servers:
   - url: http://localhost:3000/api/v1
     description: Local development server
 paths:
-  # ---- Notification (Internal) ----
+  # -------------------------------- Notification (Internal) --------------------------------
   /notification/system:
     post:
       tags: [Notification (Internal)]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SystemNotificationRequest'
       responses:
+        '200':
+          description: Notification sent
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -81,39 +593,85 @@ paths:
   /notification/email:
     post:
       tags: [Notification (Internal)]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EmailNotificationRequest'
       responses:
+        '200':
+          description: Email queued
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
-
-  # ---- Audit (Internal) ----
+  # -------------------------------- Audit (Internal) --------------------------------
   /audit/log:
     post:
       tags: [Audit (Internal)]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuditLogRequest'
       responses:
+        '201':
+          description: Log entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
-
-  # ---- Auth ----
+  # -------------------------------- Auth --------------------------------
   /auth/register:
     post:
       tags: [Auth]
       security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
       responses:
+        '201':
+          description: Account created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
         '400':
           $ref: '#/components/responses/BadRequest'
   /auth/login:
     post:
       tags: [Auth]
       security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
       responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -121,7 +679,19 @@ paths:
   /auth/token/refresh:
     post:
       tags: [Auth]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshTokenRequest'
       responses:
+        '200':
+          description: New token pair
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenPair'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -130,18 +700,42 @@ paths:
     get:
       tags: [Auth]
       responses:
+        '200':
+          description: Token is valid
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenValidationResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
   /auth/logout:
     post:
       tags: [Auth]
       responses:
+        '200':
+          description: Logged out
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
   /auth/backup:
-    put:
+    patch:
       tags: [Auth]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/KeyBackupUpload'
       responses:
+        '200':
+          description: Backup stored
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -149,6 +743,12 @@ paths:
     get:
       tags: [Auth]
       responses:
+        '200':
+          description: Returns encrypted backup
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KeyBackupResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
@@ -156,12 +756,17 @@ paths:
     delete:
       tags: [Auth]
       responses:
+        '200':
+          description: Backup deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
           $ref: '#/components/responses/NotFound'
-
-  # ---- Messaging ----
+  # -------------------------------- Messaging --------------------------------
   /messaging/{channelId}:
     parameters:
       - name: channelId
@@ -171,14 +776,47 @@ paths:
           type: string
     get:
       tags: [Messaging]
+      parameters:
+        - name: cursor
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Message ID to start after (from previous page's next_cursor)
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 50
+            maximum: 100
+          description: Number of messages to return
       responses:
+        '200':
+          description: Paginated message list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedMessages'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
           $ref: '#/components/responses/NotFound'
     post:
       tags: [Messaging]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateMessageRequest'
       responses:
+        '201':
+          description: Message created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Message'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -200,13 +838,31 @@ paths:
     get:
       tags: [Messaging]
       responses:
+        '200':
+          description: Returns the message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Message'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
           $ref: '#/components/responses/NotFound'
     patch:
       tags: [Messaging]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateMessageRequest'
       responses:
+        '200':
+          description: Message updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Message'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -218,14 +874,19 @@ paths:
     delete:
       tags: [Messaging]
       responses:
+        '200':
+          description: Message deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
-
-  # ---- Media ----
+  # -------------------------------- Media --------------------------------
   /media/{channelId}/{messageId}:
     parameters:
       - name: channelId
@@ -240,7 +901,25 @@ paths:
           type: string
     post:
       tags: [Media]
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required:
+                - file
+              properties:
+                file:
+                  type: string
+                  format: binary
       responses:
+        '201':
+          description: Media uploaded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Media'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -250,6 +929,14 @@ paths:
     get:
       tags: [Media]
       responses:
+        '200':
+          description: Returns media metadata
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Media'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
@@ -257,6 +944,12 @@ paths:
     delete:
       tags: [Media]
       responses:
+        '200':
+          description: Media deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
@@ -265,7 +958,19 @@ paths:
           $ref: '#/components/responses/NotFound'
     patch:
       tags: [Media]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateMediaRequest'
       responses:
+        '200':
+          description: Media updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Media'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -274,9 +979,8 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
-
-  # ---- RTC ----
-  /rtc/{channelId}/join:
+  # -------------------------------- RTC --------------------------------
+  /rtc/{channelId}/participants:
     parameters:
       - name: channelId
         in: path
@@ -286,20 +990,25 @@ paths:
     post:
       tags: [RTC]
       responses:
+        '200':
+          description: Joined call
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/JoinCallResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
           $ref: '#/components/responses/NotFound'
-  /rtc/{channelId}/leave:
-    parameters:
-      - name: channelId
-        in: path
-        required: true
-        schema:
-          type: string
-    post:
+    delete:
       tags: [RTC]
       responses:
+        '200':
+          description: Left call
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
@@ -314,23 +1023,53 @@ paths:
     get:
       tags: [RTC]
       responses:
+        '200':
+          description: Call status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CallStatus'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
           $ref: '#/components/responses/NotFound'
-
-  # ---- Server Management ----
+  # -------------------------------- Server Management --------------------------------
   /server/users:
     get:
       tags: [Server Management]
       responses:
+        '200':
+          description: List of server members
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ServerMember'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
     post:
       tags: [Server Management]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - user_id
+              properties:
+                user_id:
+                  type: string
       responses:
+        '201':
+          description: User added to server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerMember'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -347,13 +1086,31 @@ paths:
     get:
       tags: [Server Management]
       responses:
+        '200':
+          description: Member details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerMember'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
           $ref: '#/components/responses/NotFound'
-    put:
+    patch:
       tags: [Server Management]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateMemberRequest'
       responses:
+        '200':
+          description: Member updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerMember'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -365,6 +1122,12 @@ paths:
     delete:
       tags: [Server Management]
       responses:
+        '200':
+          description: Member removed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
@@ -375,13 +1138,33 @@ paths:
     get:
       tags: [Server Management]
       responses:
+        '200':
+          description: List of channels
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Channel'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
     post:
       tags: [Server Management]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateChannelRequest'
       responses:
+        '201':
+          description: Channel created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Channel'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -398,13 +1181,31 @@ paths:
     get:
       tags: [Server Management]
       responses:
+        '200':
+          description: Channel details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Channel'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
           $ref: '#/components/responses/NotFound'
-    put:
+    patch:
       tags: [Server Management]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateChannelRequest'
       responses:
+        '200':
+          description: Channel updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Channel'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -416,6 +1217,12 @@ paths:
     delete:
       tags: [Server Management]
       responses:
+        '200':
+          description: Channel deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
@@ -426,13 +1233,33 @@ paths:
     get:
       tags: [Server Management]
       responses:
+        '200':
+          description: List of roles
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Role'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
     post:
       tags: [Server Management]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateRoleRequest'
       responses:
+        '201':
+          description: Role created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Role'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -449,15 +1276,33 @@ paths:
     get:
       tags: [Server Management]
       responses:
+        '200':
+          description: Role details with permissions
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Role'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
-    put:
+    patch:
       tags: [Server Management]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateRoleRequest'
       responses:
+        '200':
+          description: Role updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Role'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -469,6 +1314,12 @@ paths:
     delete:
       tags: [Server Management]
       responses:
+        '200':
+          description: Role deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
@@ -479,13 +1330,33 @@ paths:
     get:
       tags: [Server Management]
       responses:
+        '200':
+          description: List of permissions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Permission'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
     post:
       tags: [Server Management]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePermissionRequest'
       responses:
+        '201':
+          description: Permission created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Permission'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -502,15 +1373,33 @@ paths:
     get:
       tags: [Server Management]
       responses:
+        '200':
+          description: Permission details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Permission'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
-    put:
+    patch:
       tags: [Server Management]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdatePermissionRequest'
       responses:
+        '200':
+          description: Permission updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Permission'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -522,18 +1411,31 @@ paths:
     delete:
       tags: [Server Management]
       responses:
+        '200':
+          description: Permission deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '403':
           $ref: '#/components/responses/Forbidden'
         '404':
           $ref: '#/components/responses/NotFound'
-
-  # ---- Social ----
+  # -------------------------------- Social --------------------------------
   /social/friends:
     get:
       tags: [Social]
       responses:
+        '200':
+          description: List of friends
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Friend'
         '401':
           $ref: '#/components/responses/Unauthorised'
   /social/friends/{userId}:
@@ -546,6 +1448,12 @@ paths:
     delete:
       tags: [Social]
       responses:
+        '200':
+          description: Friend removed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
@@ -554,12 +1462,32 @@ paths:
     get:
       tags: [Social]
       responses:
+        '200':
+          description: List of pending friend requests
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FriendRequest'
         '401':
           $ref: '#/components/responses/Unauthorised'
   /social/friends/request:
     post:
       tags: [Social]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SendFriendRequest'
       responses:
+        '201':
+          description: Friend request sent
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FriendRequest'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -575,7 +1503,19 @@ paths:
           type: string
     patch:
       tags: [Social]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateFriendRequest'
       responses:
+        '200':
+          description: Friend request updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FriendRequest'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -588,6 +1528,14 @@ paths:
     get:
       tags: [Social]
       responses:
+        '200':
+          description: List of blocked users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Block'
         '401':
           $ref: '#/components/responses/Unauthorised'
   /social/blocks/{userId}:
@@ -600,6 +1548,12 @@ paths:
     post:
       tags: [Social]
       responses:
+        '201':
+          description: User blocked
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Block'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
@@ -607,6 +1561,12 @@ paths:
     delete:
       tags: [Social]
       responses:
+        '200':
+          description: User unblocked
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
         '401':
           $ref: '#/components/responses/Unauthorised'
         '404':
