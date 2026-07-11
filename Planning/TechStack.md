@@ -13,7 +13,7 @@ The ConnText project is built using a combination of technologies, the ones used
 | Media Processing   | FFmpeg                                         | Media encoding/decoding support               |
 | Storage            | SQLite                                         | For cache, local media, user data, etc.       |
 | Transport Security | rustls (via reqwest)                           | For secure communication                      |
-| Networking         | reqwest + tokio-tungstenite                    | For server communication                      |
+| Networking         | reqwest + tokio-tungstenite + opaque-ke        | For server communication                      |
 | E2E Encryption     | OpenMLS                                        | For secure end-to-end encryption              |
 | Language Bindings  | UniFFI (Kotlin, Swift, Python) + C FFI         | Exposes SDK to other languages                |
 
