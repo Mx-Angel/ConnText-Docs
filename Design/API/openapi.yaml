@@ -2,7 +2,7 @@ openapi: 3.2.0
 info:
   title: ConnText API
   description: API contracts for the ConnText communication platform
-  version: 0.1.0
+  version: 0.0.1
 components:
   securitySchemes:
     bearerHttpAuthentication:
@@ -30,28 +30,28 @@ components:
       required:
         - username
         - email
-        - password
+        - opaque_payload
       properties:
         username:
           type: string
         email:
           type: string
           format: email
-        password:
+        opaque_payload:
           type: string
-          format: password
+          description: Base64-encoded OPAQUE protocol message
     LoginRequest:
       type: object
       required:
         - email
-        - password
+        - opaque_payload
       properties:
         email:
           type: string
           format: email
-        password:
+        opaque_payload:
           type: string
-          format: password
+          description: Base64-encoded OPAQUE protocol message
     TokenPair:
       type: object
       properties:
@@ -551,6 +551,12 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/Error'
+    Conflict:
+      description: Resource already exists or conflicts with current state
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
 security:
   - bearerHttpAuthentication: []
 tags:
@@ -563,6 +569,7 @@ tags:
   - name: Server Management
   - name: Social
   - name: System Management
+    description: Server infrastructure management. Endpoints deferred until Admin Panel design is complete.
 servers:
   - url: http://localhost:3000/api/v1
     description: Local development server
@@ -600,7 +607,7 @@ paths:
             schema:
               $ref: '#/components/schemas/EmailNotificationRequest'
       responses:
-        '200':
+        '202':
           description: Email queued
           content:
             application/json:
@@ -679,6 +686,7 @@ paths:
   /auth/token/refresh:
     post:
       tags: [Auth]
+      security: []
       requestBody:
         required: true
         content:
@@ -721,7 +729,7 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorised'
   /auth/backup:
-    patch:
+    put:
       tags: [Auth]
       requestBody:
         required: true
@@ -1494,7 +1502,9 @@ paths:
           $ref: '#/components/responses/Unauthorised'
         '404':
           $ref: '#/components/responses/NotFound'
-  /social/friends/request/{requestId}:
+        '409':
+          $ref: '#/components/responses/Conflict'
+  /social/friends/requests/{requestId}:
     parameters:
       - name: requestId
         in: path

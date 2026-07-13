@@ -21,3 +21,6 @@ We use this instead of a mesh network for two reasons: privacy, as participants 
 ## Encryption Notes
 - Content field contains ciphertext for E2EE channels (ADR-005).
 - For local search indexing of E2EE messages the data must be encrypted at rest.
+
+## Websocket Use
+The use of websockets will be found as we implement the system, so deferring for now.

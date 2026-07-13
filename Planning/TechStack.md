@@ -13,7 +13,8 @@ The ConnText project is built using a combination of technologies, the ones used
 | Media Processing   | FFmpeg                                         | Media encoding/decoding support               |
 | Storage            | SQLite                                         | For cache, local media, user data, etc.       |
 | Transport Security | rustls (via reqwest)                           | For secure communication                      |
-| Networking         | reqwest + tokio-tungstenite + opaque-ke        | For server communication                      |
+| Networking         | reqwest + tokio-tungstenite                    | For server communication                      |
+| Auth / Security    | oauth2 + jsonwebtoken + opaque-ke              | User authentication                           |
 | E2E Encryption     | OpenMLS                                        | For secure end-to-end encryption              |
 | Language Bindings  | UniFFI (Kotlin, Swift, Python) + C FFI         | Exposes SDK to other languages                |
 
@@ -36,7 +37,7 @@ The ConnText project is built using a combination of technologies, the ones used
 | Web Server         | Express.js                     | REST API support for auth or file management |
 | Database           | PostgreSQL                     | Structured storage for accounts, metadata    |
 | File Storage       | fs (built-in)                  | For uploads or shared media                  |
-| Auth / Security    | oauth2-server + jsonwebtoken   | User authentication                          |
+| Auth / Security    | oauth2-server + jsonwebtoken + opaque-ke | User authentication                |
 | Realtime Messaging | ws + http                      | Server fallback for signaling or messaging   |
 | Media Processing   | FFmpeg (fluent-ffmpeg) + Sharp | Media encoding/decoding/modification support |
 | API Documentation  | OpenAPI (Swagger UI)           | For the exposed APIs                         |
