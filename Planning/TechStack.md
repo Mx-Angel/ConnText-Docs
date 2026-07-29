@@ -35,7 +35,7 @@ The ConnText project is built using a combination of technologies, the ones used
 | ------------------ | ------------------------------ | -------------------------------------------- |
 | Language           | TypeScript / Node.js           | Lightweight backend services                 |
 | Web Server         | Express.js                     | REST API support for auth or file management |
-| Database           | PostgreSQL                     | Structured storage for accounts, metadata    |
+| Database           | PostgreSQL (via pg)            | Structured storage for accounts, metadata    |
 | File Storage       | fs (built-in)                  | For uploads or shared media                  |
 | Auth / Security    | oauth2-server + jsonwebtoken + opaque-ke | User authentication                |
 | Realtime Messaging | ws + http                      | Server fallback for signaling or messaging   |
