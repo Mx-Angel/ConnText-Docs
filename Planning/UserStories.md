@@ -9,10 +9,13 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a user, I want to create an account so that I can access the ConnText platform and its features.
 - As a user, I want to delete my account so that I can remove my data from the ConnText platform.
 - As a user, I want to log in to my account so that I can communicate with others.
-- As a user, I want to be able to modify and access my personal data and settings so that I can manage my profile and customise my experience.
+- As a user, I want to be able to modify and access my personal data so that I can manage my profile data.
+- As a user, I want to be able to access my settings so I can customise my experience.
 - As a user, I want to log out of my account so that I can secure my session when I am done using the platform.
 - As a user, I want to connect my account to an email address so that I can receive notifications and reset my password if needed.
+- As a user, I want to change my email address so that I can update my contact information.
 - As a user, I want to enable two-factor authentication so that I can enhance the security of my account.
+- As a user, I want to disable two-factor authentication so that I can manage my account security preferences.
 - As a user, I want to create or edit my account image so that I can personalise my profile.
 - As a user, I want to create or edit my account name so that I can identify myself clearly on the platform.
 - As a user, I want to create or edit my account description so that I can provide more information about myself.
@@ -21,9 +24,10 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a user, I want to modify my presence/status indicators so that I can communicate my availability or mood effectively.
 - As a user, I want to block other users so that I can prevent unwanted communication.
 - As a user, I want to mute other users so that I can avoid communication with them without having to leave a space.
-- As a user, I want to recover my password so that I can regain access to my account if I forget it.
+- As a user, I want to reset my password so that I can recover access to my account if I forget it.
 - As a user, I want to share my video feed in voice channels so that users can have face-to-face communication.
 - As a user, I want to be able to join voice channels so that I can communicate with others using audio.
+- As a user, I want to be able to leave voice channels so that I can stop communicating when I choose.
 - As a user, I want to be able to see who else is in a voice channel before joining so that I can decide whether to join or not.
 - As a user, I want to be able to see all participants in a voice channel while I'm in it so that I can know who I'm communicating with.
 - As a user, I want to share my screen during voice/video chats so that I can present information or collaborate visually.
@@ -47,8 +51,15 @@ This document outlines user stories for the ConnText software. Each user story c
 - As a user, I want to verify my email address so that I can secure my account and receive important notifications.
 - As a user, I want to view information about other users so that I can learn more about people I'm communicating with.
 - As a user, I want to view server member lists so that I can see who else is in the community.
+- As a user, I want to search server member lists so that I can find specific users within a community.
 - As a user, I want to make voice calls so that I can communicate with others using audio.
-- As a user, I want to participate in group messaging so that I can communicate with multiple people at once.
+- As a user, I want to accept or decline incoming voice calls so that I can manage my communication preferences.
+- As a user, I want to make video calls so that I can communicate with others using video.
+- As a user, I want to accept or decline incoming video calls so that I can manage my communication preferences.
+- As a user, I want to create a group chat so that I can communicate with multiple people at once.
+- As a user, I want to send invites to group chats so that I can include others in the conversation.
+- As a user, I want to add or remove participants from a group chat so that I can manage the members of the conversation.
+- As a user, I want to accept or decline invitations to group chats so that I can control my participation in group conversations.
 - As a user, I want to have a plugin manager so that I can easily install, update, and manage plugins for my ConnText instance.
 - As a user, I want to be able to edit or delete my messages so that I can correct mistakes or remove content I no longer want to share.
 - As a user, I want to be able to send files to other users so that I can share documents, images, and other resources.

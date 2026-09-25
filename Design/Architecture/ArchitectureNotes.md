@@ -51,7 +51,7 @@ WebSocket usage patterns will be determined during implementation.
 ### Authentication Service
 **Purpose**: User authentication, authorization, and session management
 
-- Handles user login and token generation
+- Handles user login, registration and token generation
 - Manages permission checks and user sessions
 - Implements OPAQUE protocol (RFC 9807) for secure password handling—server never receives plaintext passwords
 - Supports all privileged actions across the system

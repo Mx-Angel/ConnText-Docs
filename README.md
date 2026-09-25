@@ -71,7 +71,7 @@ The documentation was created in a specific order to help developers and users u
 Note that the documentation isn't perfect, no documentation is, but if you find any mistakes or have suggestions for improvements, please feel free to open an issue, pull request or start a discussion.
 
 # AI Policy
-- AI use is strictly limited to reviewing documentation for gaps, inconsistencies and mistakes. AI must never be used to author changes or create content and any changes made with the assistance of AI will be the responsibility of the human author.
+- AI use is strictly limited to reviewing documentation for gaps, inconsistencies and mistakes. AI must never be used to blindly create or modify content and any changes made with the assistance of AI will be the responsibility of the human author.
     - "A computer can never be held accountable, therefore a computer must never make a management decision." - IBM Training Manual, 1979.
 
 All documentation is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
