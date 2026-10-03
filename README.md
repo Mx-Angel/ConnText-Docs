@@ -30,11 +30,15 @@ The documentation was created in a specific order to help developers and users u
 # Design
 1. Architecture
     - [Architecture Notes](Design/Architecture/ArchitectureNotes.md)
-    - [System Context Diagram](Design/Architecture/Images/SystemContextDiagram.png)
-        - [Container Diagram](Design/Architecture/Images/ContainerDiagram.png)
-            - [Backend Component Diagram](Design/Architecture/Images/BackendComponentDiagram.png)
-            - [Desktop Client Component Diagram](Design/Architecture/Images/DesktopClientComponentDiagram.png)
-                - [SDK Component Diagram](Design/Architecture/Images/SDKComponentDiagram.png)
+    - [System Context Diagram](Design/Architecture/C4Diagrams/Images/SystemContextDiagram.png)
+        - [Container Diagram](Design/Architecture/C4Diagrams/Images/ContainerDiagram.png)
+            - [Backend Component Diagram](Design/Architecture/C4Diagrams/Images/BackendComponentDiagram.png)
+            - [Desktop Client Component Diagram](Design/Architecture/C4Diagrams/Images/DesktopClientComponentDiagram.png)
+                - [SDK Component Diagram](Design/Architecture/C4Diagrams/Images/SDKComponentDiagram.png)
+2. Workflows
+    - [Workflow Notes](Design/Architecture/Workflows.md)
+    - Workflow Diagrams:
+        - [Register Workflow](Design/Architecture/WorkflowDiagrams/Images/RegistrationDiagram.png)
 2. Wireframes
     - Login Page ([Latte](Design/Wireframes/Images/LoginPage/LoginLatte.png)/[Frappé](Design/Wireframes/Images/LoginPage/LoginFrappe.png)/[Macchiato](Design/Wireframes/Images/LoginPage/LoginMacchiato.png)/[Mocha](Design/Wireframes/Images/LoginPage/LoginMocha.png))
     - Sign Up Page ([Latte](Design/Wireframes/Images/SignUpPage/SignUpLatte.png)/[Frappé](Design/Wireframes/Images/SignUpPage/SignUpFrappe.png)/[Macchiato](Design/Wireframes/Images/SignUpPage/SignUpMacchiato.png)/[Mocha](Design/Wireframes/Images/SignUpPage/SignUpMocha.png))
@@ -53,8 +57,8 @@ The documentation was created in a specific order to help developers and users u
     - [Prototype File](Design/Prototypes/FullPrototype.penpot)
     - ![Prototype Preview](Design/Prototypes/PrototypeDemo.gif)
 4. Entity Relationship Diagrams (ERDs)
-    - [Backend ERD](Design/Architecture/Images/BackendERDiagram.png)
-    - [SDK ERD](Design/Architecture/Images/SDKERDiagram.png)
+    - [Backend ERD](Design/Architecture/C4Diagrams/Images/BackendERDiagram.png)
+    - [SDK ERD](Design/Architecture/C4Diagrams/Images/SDKERDiagram.png)
 5. API Contracts
     - [API Contracts](Design/API/openapi.yaml)
 
