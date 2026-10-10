@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="1yq8rJmB9SaEpNFKiX4l">
-    <mxGraphModel dx="1228" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1568" dy="998" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -39,17 +39,6 @@
         </mxCell>
         <mxCell id="ofyazuCTa_rt0_o9Aj1J-23" parent="1" style="swimlane;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" value="Backend" vertex="1">
           <mxGeometry height="560" width="280" x="600" y="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ofyazuCTa_rt0_o9Aj1J-25" edge="1" parent="ofyazuCTa_rt0_o9Aj1J-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="100" y="920.0000000000002" as="sourcePoint" />
-            <mxPoint x="100" y="960" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ofyazuCTa_rt0_o9Aj1J-26" connectable="0" parent="ofyazuCTa_rt0_o9Aj1J-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
-          <mxGeometry relative="1" x="-0.1983" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="ofyazuCTa_rt0_o9Aj1J-29" edge="1" parent="ofyazuCTa_rt0_o9Aj1J-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
           <mxGeometry relative="1" as="geometry">
