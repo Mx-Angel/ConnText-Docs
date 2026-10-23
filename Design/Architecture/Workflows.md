@@ -87,8 +87,8 @@ Each workflow belongs to one of the diagram types below.
 - Account password change
 - Server leaving
     - The user should have the option to delete all their data from a server when leaving it, unless they are removed by an administrator.
-- Message search
-    - Differentiate between E2EE and non-E2EE message routing.
+- Server content search
+    - Differentiate between E2EE and non-E2EE content routing.
 - Server user list searching
 
 ### Future Implementation [Pending Spec]
