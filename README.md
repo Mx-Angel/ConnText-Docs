@@ -44,6 +44,7 @@ The documentation was created in a specific order to help developers and users u
         - [Password Reset Workflow](Design/Architecture/WorkflowDiagrams/Images/PasswordResetDiagram.png)
         - [Server Leaving Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerLeavingDiagram.png)
         - [Server Content Search Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerContentSearchDiagram.png)
+        - [Server User Search Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerUserSearchDiagram.png)
 2. Wireframes
     - Login Page ([Latte](Design/Wireframes/Images/LoginPage/LoginLatte.png)/[Frappé](Design/Wireframes/Images/LoginPage/LoginFrappe.png)/[Macchiato](Design/Wireframes/Images/LoginPage/LoginMacchiato.png)/[Mocha](Design/Wireframes/Images/LoginPage/LoginMocha.png))
     - Sign Up Page ([Latte](Design/Wireframes/Images/SignUpPage/SignUpLatte.png)/[Frappé](Design/Wireframes/Images/SignUpPage/SignUpFrappe.png)/[Macchiato](Design/Wireframes/Images/SignUpPage/SignUpMacchiato.png)/[Mocha](Design/Wireframes/Images/SignUpPage/SignUpMocha.png))
