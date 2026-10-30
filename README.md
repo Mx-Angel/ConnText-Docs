@@ -42,6 +42,7 @@ The documentation was created in a specific order to help developers and users u
         - [Login Workflow](Design/Architecture/WorkflowDiagrams/Images/LoginDiagram.png)
         - [Logout Workflow](Design/Architecture/WorkflowDiagrams/Images/LogoutDiagram.png)
         - [Password Reset Workflow](Design/Architecture/WorkflowDiagrams/Images/PasswordResetDiagram.png)
+        - [Server Joining Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerJoiningDiagram.png)
         - [Server Leaving Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerLeavingDiagram.png)
         - [Server Content Search Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerContentSearchDiagram.png)
         - [Server User Search Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerUserSearchDiagram.png)
