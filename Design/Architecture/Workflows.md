@@ -4,13 +4,18 @@ Each workflow belongs to one of the diagram types below.
 
 ## Classification Rules
 
-- **Sequence**: Shows ordered interactions between client, SDK, gateway, backend services, and database. Can only have one successful outcome, but may have multiple failure outcomes (e.g., invalid credentials, server error).
-- **Activity**: Shows workflows with decisions leading to different *successful* outcomes, or explicit user choices (e.g., MFA yes/no, delete data or keep, E2EE vs plaintext routing).
+- **Activity**: Shows workflows with decisions leading to different outcomes, or explicit user choices (e.g., MFA yes/no, delete data or keep, E2EE vs plaintext routing).
 - **State**: Shows how an entity or session changes states over time due to events. Tracks lifecycle (conditions and transitions).
 
-## Sequence Diagrams
+## Activity Diagrams
 
 ### Account Management
+- Account login
+- Account logout
+- Account deletion
+- Account password change
+- User Registration
+    - Includes email verification flow and password strength validation.
 - Profile Picture Upload
 - Profile Picture Modification
 - Profile Picture Deletion
@@ -36,7 +41,11 @@ Each workflow belongs to one of the diagram types below.
 
 ### Servers & Channels
 - Server joining
+- Server leaving
+    - The user should have the option to delete all their data from a server when leaving it, unless they are removed by an administrator.
 - Server user list viewing
+- Server content search
+    - Differentiate between E2EE and non-E2EE content routing.
 - Server user list searching
 
 ### Messaging
@@ -76,20 +85,6 @@ Each workflow belongs to one of the diagram types below.
 ### Voice Channel Interaction (Setup)
 - Voice channel participant list view (initial fetch)
 - Screen sharing setup
-
-## Activity Diagrams
-
-- User Registration
-    - Includes email verification flow and password strength validation.
-- Account login
-- Account logout
-- Account deletion
-- Account password change
-- Server leaving
-    - The user should have the option to delete all their data from a server when leaving it, unless they are removed by an administrator.
-- Server content search
-    - Differentiate between E2EE and non-E2EE content routing.
-- Server user list searching
 
 ### Future Implementation [Pending Spec]
 - Theming [Future]
