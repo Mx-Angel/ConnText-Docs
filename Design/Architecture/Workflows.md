@@ -10,11 +10,13 @@ Each workflow belongs to one of the diagram types below.
 ## Activity Diagrams
 
 ### Account Management
-- Account login
-- Account logout
+- [Account login](WorkflowDiagrams/Images/LoginDiagram.png)
+- [Account logout](WorkflowDiagrams/Images/LogoutDiagram.png)
 - Account deletion
 - Account password change
-- User Registration
+- [Account password reset](WorkflowDiagrams/Images/PasswordResetDiagram.png)
+- Account password recovery
+- [User Registration](WorkflowDiagrams/Images/RegistrationDiagram.png)
     - Includes email verification flow and password strength validation.
 - Profile Picture Upload
 - Profile Picture Modification
@@ -40,13 +42,13 @@ Each workflow belongs to one of the diagram types below.
 - Other user account information viewing
 
 ### Servers & Channels
-- Server joining
-- Server leaving
+- [Server joining](WorkflowDiagrams/Images/ServerJoiningDiagram.png)
+- [Server leaving](WorkflowDiagrams/Images/ServerLeavingDiagram.png)
     - The user should have the option to delete all their data from a server when leaving it, unless they are removed by an administrator.
-- Server user list viewing
-- Server content search
+- [Server user list viewing](WorkflowDiagrams/Images/ServerUserListViewingDiagram.png)
+- [Server content search](WorkflowDiagrams/Images/ServerContentSearchDiagram.png)
     - Differentiate between E2EE and non-E2EE content routing.
-- Server user list searching
+- [Server user list searching](WorkflowDiagrams/Images/ServerUserListViewingDiagram.png)
 
 ### Messaging
 - Private message sending
