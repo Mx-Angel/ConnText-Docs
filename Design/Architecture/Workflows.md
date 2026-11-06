@@ -13,7 +13,7 @@ Each workflow belongs to one of the diagram types below.
 - [Account login](WorkflowDiagrams/Images/LoginDiagram.png)
 - [Account logout](WorkflowDiagrams/Images/LogoutDiagram.png)
 - [Account deletion](WorkflowDiagrams/Images/AccountDeletionDiagram.png)
-- Account password change
+- [Account password change](WorkflowDiagrams/Images/PasswordChangeDiagram.png)
 - [Account password reset](WorkflowDiagrams/Images/PasswordResetDiagram.png)
 - Account password recovery
 - [User Registration](WorkflowDiagrams/Images/RegistrationDiagram.png)
