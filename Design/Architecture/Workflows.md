@@ -81,7 +81,8 @@ Each workflow belongs to one of the diagram types below.
 - User removing participant from group chat
 
 ### Notifications
-- Notification sending
+- [Notification sending (application)](WorkflowDiagrams/Images/ApplicationNotificationDiagram.png)
+- Notification sending (email)
 - Notification configuration
 
 ### Voice Channel Interaction (Setup)

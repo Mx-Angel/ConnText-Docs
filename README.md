@@ -37,18 +37,7 @@ The documentation was created in a specific order to help developers and users u
                 - [SDK Component Diagram](Design/Architecture/C4Diagrams/Images/SDKComponentDiagram.png)
 2. Workflows
     - [Workflow Notes](Design/Architecture/Workflows.md)
-    - Workflow Diagrams:
-        - [Register Workflow](Design/Architecture/WorkflowDiagrams/Images/RegistrationDiagram.png)
-        - [Login Workflow](Design/Architecture/WorkflowDiagrams/Images/LoginDiagram.png)
-        - [Logout Workflow](Design/Architecture/WorkflowDiagrams/Images/LogoutDiagram.png)
-        - [Account Deletion Workflow](Design/Architecture/WorkflowDiagrams/Images/AccountDeletionDiagram.png)
-        - [Password Change Workflow](Design/Architecture/WorkflowDiagrams/Images/PasswordChangeDiagram.png)
-        - [Password Reset Workflow](Design/Architecture/WorkflowDiagrams/Images/PasswordResetDiagram.png)
-        - [Server Joining Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerJoiningDiagram.png)
-        - [Server Leaving Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerLeavingDiagram.png)
-        - [Server Content Search Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerContentSearchDiagram.png)
-        - [Server User Search Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerUserSearchDiagram.png)
-        - [Server User List Viewing Workflow](Design/Architecture/WorkflowDiagrams/Images/ServerUserListViewingDiagram.png)
+    - [Workflow Diagram Images](Design/Architecture/WorkflowDiagrams/Images/)
 2. Wireframes
     - Login Page ([Latte](Design/Wireframes/Images/LoginPage/LoginLatte.png)/[Frappé](Design/Wireframes/Images/LoginPage/LoginFrappe.png)/[Macchiato](Design/Wireframes/Images/LoginPage/LoginMacchiato.png)/[Mocha](Design/Wireframes/Images/LoginPage/LoginMocha.png))
     - Sign Up Page ([Latte](Design/Wireframes/Images/SignUpPage/SignUpLatte.png)/[Frappé](Design/Wireframes/Images/SignUpPage/SignUpFrappe.png)/[Macchiato](Design/Wireframes/Images/SignUpPage/SignUpMacchiato.png)/[Mocha](Design/Wireframes/Images/SignUpPage/SignUpMocha.png))
