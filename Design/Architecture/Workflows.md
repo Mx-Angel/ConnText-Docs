@@ -86,8 +86,8 @@ Each workflow belongs to one of the diagram types below.
 - [Notification configuration](WorkflowDiagrams/Images/NotificationConfigurationDiagram.png)
 
 ### Voice Channel Interaction
-- [Voice channel participant list view (cold start fetch)](WorkflowDiagrams/Images/VoiceChannelParticipantListDiagram.png)
-- Voice channel participant list view (regular fetch)
+- [Voice channel participant list view (cold start fetch)](WorkflowDiagrams/Images/VoiceChannelParticipantListDiagram(Cold).png)
+- [Voice channel participant list view (regular fetch)](WorkflowDiagrams/Images/VoiceChannelParticipantListDiagram(Regular).png)
 - Voice channel joining
 - Voice channel leaving
 - Screen sharing setup
