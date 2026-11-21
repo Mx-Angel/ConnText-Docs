@@ -38,7 +38,7 @@ The documentation was created in a specific order to help developers and users u
 2. Workflows
     - [Workflow Notes](Design/Architecture/Workflows.md)
     - [Workflow Diagram Images](Design/Architecture/WorkflowDiagrams/Images/)
-2. Wireframes
+3. Wireframes
     - Login Page ([Latte](Design/Wireframes/Images/LoginPage/LoginLatte.png)/[Frappé](Design/Wireframes/Images/LoginPage/LoginFrappe.png)/[Macchiato](Design/Wireframes/Images/LoginPage/LoginMacchiato.png)/[Mocha](Design/Wireframes/Images/LoginPage/LoginMocha.png))
     - Sign Up Page ([Latte](Design/Wireframes/Images/SignUpPage/SignUpLatte.png)/[Frappé](Design/Wireframes/Images/SignUpPage/SignUpFrappe.png)/[Macchiato](Design/Wireframes/Images/SignUpPage/SignUpMacchiato.png)/[Mocha](Design/Wireframes/Images/SignUpPage/SignUpMocha.png))
     - Welcome Page ([Latte](Design/Wireframes/Images/WelcomePage/WelcomeLatte.png)/[Frappé](Design/Wireframes/Images/WelcomePage/WelcomeFrappe.png)/[Macchiato](Design/Wireframes/Images/WelcomePage/WelcomeMacchiato.png)/[Mocha](Design/Wireframes/Images/WelcomePage/WelcomeMocha.png))
@@ -52,13 +52,13 @@ The documentation was created in a specific order to help developers and users u
     - Server Chat Page ([Latte](Design/Wireframes/Images/ServerChatPage/ServerChatLatte.png)/[Frappé](Design/Wireframes/Images/ServerChatPage/ServerChatFrappe.png)/[Macchiato](Design/Wireframes/Images/ServerChatPage/ServerChatMacchiato.png)/[Mocha](Design/Wireframes/Images/ServerChatPage/ServerChatMocha.png))
     - Server Voice Chat Page ([Latte](Design/Wireframes/Images/ServerVoiceChatPage/ServerVoiceChatLatte.png)/[Frappé](Design/Wireframes/Images/ServerVoiceChatPage/ServerVoiceChatFrappe.png)/[Macchiato](Design/Wireframes/Images/ServerVoiceChatPage/ServerVoiceChatMacchiato.png)/[Mocha](Design/Wireframes/Images/ServerVoiceChatPage/ServerVoiceChatMocha.png))
     - Settings Page ([Latte](Design/Wireframes/Images/SettingsPage/SettingsLatte.png)/[Frappé](Design/Wireframes/Images/SettingsPage/SettingsFrappe.png)/[Macchiato](Design/Wireframes/Images/SettingsPage/SettingsMacchiato.png)/[Mocha](Design/Wireframes/Images/SettingsPage/SettingsMocha.png))
-3. Prototypes
+4. Prototypes
     - [Prototype File](Design/Prototypes/FullPrototype.penpot)
     - ![Prototype Preview](Design/Prototypes/PrototypeDemo.gif)
-4. Entity Relationship Diagrams (ERDs)
+5. Entity Relationship Diagrams (ERDs)
     - [Backend ERD](Design/Architecture/C4Diagrams/Images/BackendERDiagram.png)
     - [SDK ERD](Design/Architecture/C4Diagrams/Images/SDKERDiagram.png)
-5. API Contracts
+6. API Contracts
     - [API Contracts](Design/API/openapi.yaml)
 
 - Architecture Decision Records (ADRs)

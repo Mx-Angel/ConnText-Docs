@@ -83,7 +83,7 @@ Each workflow belongs to one of the diagram types below.
 ### Notifications
 - [Notification sending (application)](WorkflowDiagrams/Images/ApplicationNotificationDiagram.png)
 - Notification sending (email)
-- Notification configuration
+- [Notification configuration](WorkflowDiagrams/Images/NotificationConfigurationDiagram.png)
 
 ### Voice Channel Interaction (Setup)
 - Voice channel participant list view (initial fetch)
