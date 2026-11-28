@@ -91,7 +91,7 @@ Each workflow belongs to one of the diagram types below.
 - [Voice channel joining](WorkflowDiagrams/Images/VoiceChannelJoiningDiagram.png)
 - [Voice channel leaving](WorkflowDiagrams/Images/VoiceChannelLeavingDiagram.png)
 - [Screen sharing setup](WorkflowDiagrams/Images/ScreenSharingSetupDiagram.png)
-- Video streaming setup
+- [Video streaming setup](WorkflowDiagrams/Images/VideoStreamingSetupDiagram.png)
 
 ### Future Implementation [Pending Spec]
 - Theming [Future]
